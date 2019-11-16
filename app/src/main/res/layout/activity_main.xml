@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/bg">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:gravity="center"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
-        android:gravity="center"
         android:layout_alignParentTop="true"
-        android:layout_above="@id/input_group">
-
+        android:layout_above="@+id/input_group"
+        >
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
@@ -28,9 +28,9 @@
             android:text="As One Who Serves"
             android:textColor="#FFFFFF"
             android:textSize="18sp" />
-        >
 
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/input_group"
         android:layout_width="match_parent"
@@ -46,35 +46,58 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/edit_text_middle"
-            android:hint="Enter your uregina.ca mail id"
-            android:inputType="textEmailAddress"
+            android:background="@drawable/edit_text_top"
+            android:hint="URegina Mail id"
+            android:inputType="textPersonName"
             android:padding="15dp" />
 
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bottom"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="15dp" />
+
+
         <Button
+            android:id="@+id/Login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/button"
+            android:fontFamily="sans-serif-black"
             android:foreground="?android:attr/selectableItemBackground"
-            android:text="SIGN UP"
+            android:text="LOGIN"
             android:textAllCaps="false"
             android:textColor="#00675b"
-            android:textSize="17sp"
-            android:id="@+id/signup_btn"/>
+            android:textSize="17sp" />
 
         <TextView
-            android:id="@+id/signIn_text"
+            android:id="@+id/signUp_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
             android:padding="10dp"
-            android:text="Already Have an Account?  Sign in"
+            android:text="Don't Have an Account?  Sign Up"
             android:textAllCaps="true"
             android:textSize="13dp"
             android:textStyle="bold"
             android:textColor="#00675b"
             android:fontFamily="sans-serif"/>
+        <TextView
+            android:id="@+id/forgotPassword_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:padding="10dp"
+            android:text="Forgot Password?"
+            android:textAllCaps="true"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:textColor="#00675b"
+            android:fontFamily="sans-serif"/>
+
 
     </LinearLayout>
 </RelativeLayout>
