@@ -17,9 +17,13 @@ class MainActivity : AppCompatActivity() {
           startActivity(intent)
       }
 
-      Login.setOnClickListener({
+      Login.setOnClickListener{
           val intent = Intent(this, HomapageActivity::class.java)
           startActivity(intent)
-      })
+      }
+      forgotPassword_text.setOnClickListener{
+          val intent = Intent(this, forgotPasswordActivity::class.java)
+          startActivity(intent)
+      }
     }
 }
