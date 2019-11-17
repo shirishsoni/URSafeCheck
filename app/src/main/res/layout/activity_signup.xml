@@ -41,6 +41,32 @@
         android:layout_alignParentBottom="true"
         android:gravity="center">
 
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_middle"
+            android:hint="First Name"
+            android:layout_marginBottom="2dp"
+            android:inputType="text"
+            android:padding="15dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_middle"
+            android:hint="Last Name"
+            android:layout_marginBottom="2dp"
+            android:inputType="text"
+            android:padding="15dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_middle"
+            android:hint="Student / Employee ID"
+            android:layout_marginBottom="2dp"
+            android:inputType="number"
+            android:padding="15dp" />
 
         <EditText
             android:layout_width="match_parent"
