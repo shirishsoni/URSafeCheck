@@ -19,13 +19,14 @@
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="93dp"
-            app:srcCompat="@drawable/ur_white_logo" />
+            app:srcCompat="@drawable/ur_white_logo"
+            android:contentDescription="TODO" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
-            android:text="As One Who Serves"
+            android:text="@string/as_one_who_serves"
             android:textColor="#FFFFFF"
             android:textSize="18sp" />
 
@@ -42,39 +43,47 @@
         android:gravity="center">
 
         <EditText
+            android:id="@+id/firstName_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/edit_text_middle"
-            android:hint="First Name"
             android:layout_marginBottom="2dp"
+            android:background="@drawable/edit_text_middle"
+            android:hint="@string/first_name"
             android:inputType="text"
-            android:padding="15dp" />
+            android:padding="15dp"
+            android:autofillHints="" />
 
         <EditText
+            android:id="@+id/lastName_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/edit_text_middle"
-            android:hint="Last Name"
             android:layout_marginBottom="2dp"
+            android:background="@drawable/edit_text_middle"
+            android:hint="@string/last_name"
             android:inputType="text"
-            android:padding="15dp" />
+            android:padding="15dp"
+            android:autofillHints="" />
 
         <EditText
+            android:id="@+id/studentID_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/edit_text_middle"
-            android:hint="Student / Employee ID"
             android:layout_marginBottom="2dp"
+            android:background="@drawable/edit_text_middle"
+            android:hint="@string/student_employee_id"
             android:inputType="number"
-            android:padding="15dp" />
+            android:padding="15dp"
+            android:autofillHints="" />
 
         <EditText
+            android:id="@+id/ureginaEmail_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/edit_text_middle"
-            android:hint="Enter your uregina.ca mail id"
+            android:hint="@string/enter_your_uregina_ca_mail_id"
             android:inputType="textEmailAddress"
-            android:padding="15dp" />
+            android:padding="15dp"
+            android:autofillHints="" />
 
         <Button
             android:layout_width="match_parent"
@@ -82,7 +91,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/button"
             android:foreground="?android:attr/selectableItemBackground"
-            android:text="SIGN UP"
+            android:text="@string/sign_up"
             android:textAllCaps="false"
             android:textColor="#00675b"
             android:textSize="17sp"
@@ -94,9 +103,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
             android:padding="10dp"
-            android:text="Already Have an Account?  Sign in"
+            android:text="@string/already_have_an_account_sign_in"
             android:textAllCaps="true"
-            android:textSize="13dp"
+            android:textSize="13sp"
             android:textStyle="bold"
             android:textColor="#00675b"
             android:fontFamily="sans-serif"/>
