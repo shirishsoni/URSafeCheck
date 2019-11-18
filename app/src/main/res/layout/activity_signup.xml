@@ -18,9 +18,13 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
-            android:layout_height="93dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
             app:srcCompat="@drawable/ur_white_logo"
-            android:contentDescription="TODO" />
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:maxHeight="250dp"
+            android:maxWidth="250dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -38,7 +42,7 @@
         android:orientation="vertical"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="30dp"
         android:layout_alignParentBottom="true"
         android:gravity="center">
 
@@ -47,10 +51,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="2dp"
-            android:background="@drawable/edit_text_middle"
+            android:background="@drawable/edit_text_top"
             android:hint="@string/first_name"
             android:inputType="text"
-            android:padding="15dp"
+            android:padding="12dp"
             android:autofillHints="" />
 
         <EditText
@@ -61,7 +65,7 @@
             android:background="@drawable/edit_text_middle"
             android:hint="@string/last_name"
             android:inputType="text"
-            android:padding="15dp"
+            android:padding="12dp"
             android:autofillHints="" />
 
         <EditText
@@ -72,17 +76,17 @@
             android:background="@drawable/edit_text_middle"
             android:hint="@string/student_employee_id"
             android:inputType="number"
-            android:padding="15dp"
+            android:padding="12dp"
             android:autofillHints="" />
 
         <EditText
             android:id="@+id/ureginaEmail_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/edit_text_middle"
+            android:background="@drawable/edit_text_bottom"
             android:hint="@string/enter_your_uregina_ca_mail_id"
             android:inputType="textEmailAddress"
-            android:padding="15dp"
+            android:padding="12dp"
             android:autofillHints="" />
 
         <Button

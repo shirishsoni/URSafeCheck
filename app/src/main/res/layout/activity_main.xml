@@ -18,10 +18,13 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
-            android:layout_height="93dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
             app:srcCompat="@drawable/ur_white_logo"
-            android:scaleType="fitXY"
-            android:adjustViewBounds="true"/>
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:maxHeight="250dp"
+            android:maxWidth="250dp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -40,7 +43,7 @@
         android:orientation="vertical"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="30dp"
         android:layout_alignParentBottom="true"
         android:gravity="center">
 
@@ -53,7 +56,7 @@
             android:background="@drawable/edit_text_top"
             android:hint="URegina Mail id"
             android:inputType="textPersonName"
-            android:padding="15dp" />
+            android:padding="12dp" />
 
         <EditText
             android:id="@+id/password_text"
@@ -62,7 +65,7 @@
             android:background="@drawable/edit_text_bottom"
             android:hint="Password"
             android:inputType="textPassword"
-            android:padding="15dp" />
+            android:padding="12dp" />
 
 
         <Button
@@ -83,7 +86,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
-            android:padding="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
             android:text="Don't Have an Account?  Sign Up"
             android:textAllCaps="true"
             android:textSize="13dp"
@@ -94,8 +98,7 @@
             android:id="@+id/forgotPassword_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="1dp"
-            android:padding="10dp"
+            android:paddingTop="5dp"
             android:text="Forgot Password?"
             android:textAllCaps="true"
             android:textSize="13dp"
