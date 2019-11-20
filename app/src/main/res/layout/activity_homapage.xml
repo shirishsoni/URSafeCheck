@@ -43,37 +43,44 @@
           <!-- R 1 C 1-->
 
           <androidx.cardview.widget.CardView
+              android:id="@+id/c1"
               android:layout_width="0dp"
               android:layout_height="0dp"
-              android:layout_columnWeight="1"
-              android:layout_marginBottom="16dp"
               android:layout_rowWeight="1"
+              android:layout_columnWeight="1"
               android:layout_marginLeft="16dp"
               android:layout_marginRight="16dp"
-              app:cardElevation="8dp"
-              app:cardCornerRadius="8dp">
+              android:layout_marginBottom="16dp"
+              android:clickable="true"
+              android:onClick="CardActivity"
+              app:cardCornerRadius="8dp"
+              app:cardElevation="8dp">
 
                <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
                    android:layout_gravity="center_horizontal|center_vertical"
                    android:layout_margin="16dp"
-                   android:orientation="vertical"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content">
+                   android:orientation="vertical">
 
                     <ImageView
-                        android:src="@drawable/search_sds"
-                        android:layout_gravity="center_horizontal"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:adjustViewBounds="true"
+                        android:maxWidth="75dp"
+                        android:maxHeight="75dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/sds" />
 
                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Search SDS"
                         android:textAlignment="center"
-                        android:text="SDS"
                         android:textColor="#000"
                         android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:textStyle="bold" />
 
                </LinearLayout>
           </androidx.cardview.widget.CardView>
@@ -81,6 +88,7 @@
           <!-- R 1 C 2-->
 
           <androidx.cardview.widget.CardView
+              android:id="@+id/c2"
               android:layout_width="0dp"
               android:layout_height="0dp"
               android:layout_columnWeight="1"
@@ -89,7 +97,9 @@
               android:layout_marginLeft="16dp"
               android:layout_marginRight="16dp"
               app:cardElevation="8dp"
-              app:cardCornerRadius="8dp">
+              app:cardCornerRadius="8dp"
+              android:clickable="true"
+              android:onClick="CardActivity">
 
                <LinearLayout
                    android:layout_gravity="center_horizontal|center_vertical"
@@ -102,7 +112,11 @@
                         android:src="@drawable/incident_reporting"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:maxHeight="75dp"
+                        android:maxWidth="75dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"/>
 
                     <TextView
                         android:textAlignment="center"
@@ -119,6 +133,7 @@
           <!-- R 2 C 1-->
 
           <androidx.cardview.widget.CardView
+              android:id="@+id/c3"
               android:layout_width="0dp"
               android:layout_height="0dp"
               android:layout_columnWeight="1"
@@ -127,7 +142,9 @@
               android:layout_marginLeft="16dp"
               android:layout_marginRight="16dp"
               app:cardElevation="8dp"
-              app:cardCornerRadius="8dp">
+              app:cardCornerRadius="8dp"
+              android:clickable="true"
+              android:onClick="CardActivity">
 
                <LinearLayout
                    android:layout_gravity="center_horizontal|center_vertical"
@@ -137,10 +154,14 @@
                    android:layout_height="wrap_content">
 
                     <ImageView
-                        android:src="@drawable/risk_mgmt"
+                        android:src="@drawable/risk_assess_mgmt"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:maxHeight="75dp"
+                        android:maxWidth="75dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"/>
 
                     <TextView
                         android:textAlignment="center"
@@ -156,6 +177,7 @@
 
           <!-- R 2 C 2-->
           <androidx.cardview.widget.CardView
+              android:id="@+id/c4"
               android:layout_width="0dp"
               android:layout_height="0dp"
               android:layout_columnWeight="1"
@@ -164,7 +186,9 @@
               android:layout_marginLeft="16dp"
               android:layout_marginRight="16dp"
               app:cardElevation="8dp"
-              app:cardCornerRadius="8dp">
+              app:cardCornerRadius="8dp"
+              android:clickable="true"
+              android:onClick="CardActivity">
 
                <LinearLayout
                    android:layout_gravity="center_horizontal|center_vertical"
@@ -174,14 +198,18 @@
                    android:layout_height="wrap_content">
 
                     <ImageView
-                        android:src="@drawable/misc"
+                        android:src="@drawable/others"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:maxHeight="75dp"
+                        android:maxWidth="75dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"/>
 
                     <TextView
                         android:textAlignment="center"
-                        android:text="Miscellaneous"
+                        android:text="Others"
                         android:textColor="#000"
                         android:textSize="18sp"
                         android:textStyle="bold"
@@ -193,6 +221,7 @@
 
           <!-- R 3 C 1-->
           <androidx.cardview.widget.CardView
+              android:id="@+id/c5"
               android:layout_width="0dp"
               android:layout_height="0dp"
               android:layout_columnWeight="1"
@@ -201,7 +230,9 @@
               android:layout_marginLeft="16dp"
               android:layout_marginRight="16dp"
               app:cardElevation="8dp"
-              app:cardCornerRadius="8dp">
+              app:cardCornerRadius="8dp"
+              android:clickable="true"
+              android:onClick="CardActivity">
 
                <LinearLayout
                    android:layout_gravity="center_horizontal|center_vertical"
@@ -214,7 +245,11 @@
                         android:src="@drawable/user_mannual"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:maxHeight="75dp"
+                        android:maxWidth="75dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"/>
 
                     <TextView
                         android:textAlignment="center"
@@ -230,6 +265,7 @@
 
           <!-- R 3 C 2-->
           <androidx.cardview.widget.CardView
+              android:id="@+id/c6"
               android:layout_width="0dp"
               android:layout_height="0dp"
               android:layout_columnWeight="1"
@@ -238,7 +274,9 @@
               android:layout_marginLeft="16dp"
               android:layout_marginRight="16dp"
               app:cardElevation="8dp"
-              app:cardCornerRadius="8dp">
+              app:cardCornerRadius="8dp"
+              android:clickable="true"
+              android:onClick="CardActivity">
 
                <LinearLayout
                    android:layout_gravity="center_horizontal|center_vertical"
@@ -251,11 +289,15 @@
                         android:src="@drawable/contacts"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:maxHeight="75dp"
+                        android:maxWidth="75dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"/>
 
                     <TextView
                         android:textAlignment="center"
-                        android:text="Contacts"
+                        android:text="Emergency Contacts"
                         android:textColor="#000"
                         android:textSize="18sp"
                         android:textStyle="bold"

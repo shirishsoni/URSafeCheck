@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".forgotPasswordActivity"></activity>
+        <activity android:name=".EmergencyContacts"></activity>
+        <activity android:name=".OthersActivity" />
+        <activity android:name=".UserMannualActivity" />
+        <activity android:name=".RiskAssessmentActivity" />
+        <activity android:name=".IncidentReportingActivity" />
+        <activity android:name=".SearchSDSActivity" />
+        <activity android:name=".forgotPasswordActivity" />
         <activity android:name=".HomapageActivity" />
         <activity
             android:name=".SignupActivity"
