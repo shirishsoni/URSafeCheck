@@ -1,20 +1,269 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomapageActivity"
-    android:background="@drawable/bg">
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:weightSum="10"
+    >
 
 
-     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Welcome to UR Safe Check"
-        android:gravity="center"
-        android:fontFamily="sans-serif"
-        android:textColor="#ffffff"
-        android:textSize="20sp"></TextView>
+     <RelativeLayout
+         android:layout_weight="2"
+         android:layout_width="match_parent"
+         android:layout_height="0dp">
 
-</RelativeLayout>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="34sp"
+              android:textColor="#fff"
+              android:layout_centerInParent="true"
+              android:text="@string/app_name">
+
+          </TextView>
+
+     </RelativeLayout>
+
+     <GridLayout
+         android:id="@+id/mainGrid"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="8"
+         android:rowCount="3"
+         android:columnCount="2"
+         android:alignmentMode="alignMargins"
+         android:columnOrderPreserved="false"
+         android:padding="14dp"
+         >
+
+          <!-- R 1 C 1-->
+
+          <androidx.cardview.widget.CardView
+              android:layout_width="0dp"
+              android:layout_height="0dp"
+              android:layout_columnWeight="1"
+              android:layout_marginBottom="16dp"
+              android:layout_rowWeight="1"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+              app:cardElevation="8dp"
+              app:cardCornerRadius="8dp">
+
+               <LinearLayout
+                   android:layout_gravity="center_horizontal|center_vertical"
+                   android:layout_margin="16dp"
+                   android:orientation="vertical"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/search_sds"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:text="SDS"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+               </LinearLayout>
+          </androidx.cardview.widget.CardView>
+
+          <!-- R 1 C 2-->
+
+          <androidx.cardview.widget.CardView
+              android:layout_width="0dp"
+              android:layout_height="0dp"
+              android:layout_columnWeight="1"
+              android:layout_marginBottom="16dp"
+              android:layout_rowWeight="1"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+              app:cardElevation="8dp"
+              app:cardCornerRadius="8dp">
+
+               <LinearLayout
+                   android:layout_gravity="center_horizontal|center_vertical"
+                   android:layout_margin="16dp"
+                   android:orientation="vertical"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/incident_reporting"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:text="Incident Reporting"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+               </LinearLayout>
+          </androidx.cardview.widget.CardView>
+
+          <!-- R 2 C 1-->
+
+          <androidx.cardview.widget.CardView
+              android:layout_width="0dp"
+              android:layout_height="0dp"
+              android:layout_columnWeight="1"
+              android:layout_marginBottom="16dp"
+              android:layout_rowWeight="1"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+              app:cardElevation="8dp"
+              app:cardCornerRadius="8dp">
+
+               <LinearLayout
+                   android:layout_gravity="center_horizontal|center_vertical"
+                   android:layout_margin="16dp"
+                   android:orientation="vertical"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/risk_mgmt"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:text="Risk Assessment"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+               </LinearLayout>
+          </androidx.cardview.widget.CardView>
+
+          <!-- R 2 C 2-->
+          <androidx.cardview.widget.CardView
+              android:layout_width="0dp"
+              android:layout_height="0dp"
+              android:layout_columnWeight="1"
+              android:layout_marginBottom="16dp"
+              android:layout_rowWeight="1"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+              app:cardElevation="8dp"
+              app:cardCornerRadius="8dp">
+
+               <LinearLayout
+                   android:layout_gravity="center_horizontal|center_vertical"
+                   android:layout_margin="16dp"
+                   android:orientation="vertical"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/misc"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:text="Miscellaneous"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+               </LinearLayout>
+          </androidx.cardview.widget.CardView>
+
+          <!-- R 3 C 1-->
+          <androidx.cardview.widget.CardView
+              android:layout_width="0dp"
+              android:layout_height="0dp"
+              android:layout_columnWeight="1"
+              android:layout_marginBottom="16dp"
+              android:layout_rowWeight="1"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+              app:cardElevation="8dp"
+              app:cardCornerRadius="8dp">
+
+               <LinearLayout
+                   android:layout_gravity="center_horizontal|center_vertical"
+                   android:layout_margin="16dp"
+                   android:orientation="vertical"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/user_mannual"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:text="User Mannual"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+               </LinearLayout>
+          </androidx.cardview.widget.CardView>
+
+          <!-- R 3 C 2-->
+          <androidx.cardview.widget.CardView
+              android:layout_width="0dp"
+              android:layout_height="0dp"
+              android:layout_columnWeight="1"
+              android:layout_marginBottom="16dp"
+              android:layout_rowWeight="1"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+              app:cardElevation="8dp"
+              app:cardCornerRadius="8dp">
+
+               <LinearLayout
+                   android:layout_gravity="center_horizontal|center_vertical"
+                   android:layout_margin="16dp"
+                   android:orientation="vertical"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/contacts"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:text="Contacts"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+               </LinearLayout>
+          </androidx.cardview.widget.CardView>
+     </GridLayout>
+
+</LinearLayout>
