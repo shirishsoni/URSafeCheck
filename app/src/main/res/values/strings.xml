@@ -9,4 +9,8 @@
     <string name="sign_up">SIGN UP</string>
     <string name="already_have_an_account_sign_in">Already Have an Account? Sign in</string>
     <string name="as_one_who_serves">As One Who Serves</string>
+    <string name="risk_assessment_form">Risk Assessment Form</string>
+    <string name="safety_datasheet">Safety Datasheet</string>
+    <string name="incident_reporting_form">Incident Reporting Form</string>
+    <string name="miscellaneous">Miscellaneous</string>
 </resources>
