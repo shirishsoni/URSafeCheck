@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EmergencyContacts"></activity>
+        <activity
+            android:name=".IncidentReportingActivity2"
+            android:label="@string/title_activity_incident_reporting2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".EmergencyContacts" />
         <activity android:name=".OthersActivity" />
         <activity android:name=".UserMannualActivity" />
         <activity android:name=".RiskAssessmentActivity" />
