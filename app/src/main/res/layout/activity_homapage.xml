@@ -68,8 +68,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:adjustViewBounds="true"
-                        android:maxWidth="75dp"
-                        android:maxHeight="75dp"
+                        android:maxHeight="50dp"
+                        android:maxWidth="50dp"
                         android:scaleType="fitCenter"
                         android:src="@drawable/sds" />
 
@@ -79,7 +79,7 @@
                         android:text="Search SDS"
                         android:textAlignment="center"
                         android:textColor="#000"
-                        android:textSize="18sp"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
 
                </LinearLayout>
@@ -113,8 +113,8 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:maxHeight="75dp"
-                        android:maxWidth="75dp"
+                        android:maxHeight="50dp"
+                        android:maxWidth="50dp"
                         android:adjustViewBounds="true"
                         android:scaleType="fitCenter"/>
 
@@ -122,7 +122,7 @@
                         android:textAlignment="center"
                         android:text="Incident Reporting"
                         android:textColor="#000"
-                        android:textSize="18sp"
+                        android:textSize="16sp"
                         android:textStyle="bold"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
@@ -158,8 +158,8 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:maxHeight="75dp"
-                        android:maxWidth="75dp"
+                        android:maxHeight="50dp"
+                        android:maxWidth="50dp"
                         android:adjustViewBounds="true"
                         android:scaleType="fitCenter"/>
 
@@ -167,7 +167,7 @@
                         android:textAlignment="center"
                         android:text="Risk Assessment"
                         android:textColor="#000"
-                        android:textSize="18sp"
+                        android:textSize="16sp"
                         android:textStyle="bold"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
@@ -202,8 +202,8 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:maxHeight="75dp"
-                        android:maxWidth="75dp"
+                        android:maxHeight="50dp"
+                        android:maxWidth="50dp"
                         android:adjustViewBounds="true"
                         android:scaleType="fitCenter"/>
 
@@ -211,7 +211,7 @@
                         android:textAlignment="center"
                         android:text="Others"
                         android:textColor="#000"
-                        android:textSize="18sp"
+                        android:textSize="16sp"
                         android:textStyle="bold"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
@@ -246,8 +246,8 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:maxHeight="75dp"
-                        android:maxWidth="75dp"
+                        android:maxHeight="50dp"
+                        android:maxWidth="50dp"
                         android:adjustViewBounds="true"
                         android:scaleType="fitCenter"/>
 
@@ -255,7 +255,7 @@
                         android:textAlignment="center"
                         android:text="User Mannual"
                         android:textColor="#000"
-                        android:textSize="18sp"
+                        android:textSize="16sp"
                         android:textStyle="bold"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
@@ -290,8 +290,8 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:maxHeight="75dp"
-                        android:maxWidth="75dp"
+                        android:maxHeight="50dp"
+                        android:maxWidth="50dp"
                         android:adjustViewBounds="true"
                         android:scaleType="fitCenter"/>
 
@@ -299,7 +299,7 @@
                         android:textAlignment="center"
                         android:text="Emergency Contacts"
                         android:textColor="#000"
-                        android:textSize="18sp"
+                        android:textSize="16sp"
                         android:textStyle="bold"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
