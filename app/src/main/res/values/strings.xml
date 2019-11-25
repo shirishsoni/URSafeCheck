@@ -16,6 +16,7 @@
     <string name="title_activity_incident_reporting2">IncidentReportingActivity2</string>
     <string name="action_settings">Settings</string>
 
+    <!-- string hint entries for incident reporting form -->
     <string name="hint_full_name">Full Name</string>
     <string name="hint_email">Email</string>
     <string name="hint_address">Current Address</string>
@@ -26,6 +27,12 @@
     <string name="hint_student_id">Student/Staff ID</string>
     <string name="hint_occupation">Occupation</string>
     <string name="hint_department">Department/Faculty</string>
-
+    <string name="hint_off_campus_location">Building or off Campus Location</string>
+    <string name="hint_room_no">Room Description or Room Number</string>
+    <string name="hint_incident_description">How Incident Occurred?</string>
+    <string name="hint_injury_details">Details of Injury and Treatment</string>
+    <string name="hint_medical_treatment">Was Medical Treatment Received?</string>
+    <string name="hint_initials">Enter your Initials</string>
+    <string name="hint_submit_date">Enter Date</string>
 
 </resources>
