@@ -6,21 +6,19 @@
     android:background="@drawable/bg">
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        >
+
 
         <TextView
             android:layout_width="245dp"
             android:layout_height="87dp"
             android:layout_centerInParent="true"
-            android:text="@string/miscellaneous"
+            android:text="Features are Coming Soon"
             android:textAlignment="center"
             android:textColor="#fff"
-            android:textSize="34sp"
-            android:textStyle="bold">
+            android:textSize="28sp"
+            android:gravity="center"
+            >
 
         </TextView>
-    </RelativeLayout>
+
 </RelativeLayout>

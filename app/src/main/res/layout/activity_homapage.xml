@@ -253,7 +253,7 @@
 
                     <TextView
                         android:textAlignment="center"
-                        android:text="User Mannual"
+                        android:text="Lab Safety Manual"
                         android:textColor="#000"
                         android:textSize="16sp"
                         android:textStyle="bold"

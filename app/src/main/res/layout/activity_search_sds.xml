@@ -10,7 +10,7 @@
     <LinearLayout
         android:id="@+id/title_sds"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="100dp"
         android:gravity="center"
         android:layout_weight = "1"
         >
@@ -26,13 +26,28 @@
         </TextView>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="75dp"
-        android:background="@drawable/rounded_layout"
-        android:layout_marginRight="5dp"
-        android:layout_marginLeft="5dp">
-    </LinearLayout>
+
+
+        <com.mancj.materialsearchbar.MaterialSearchBar
+            android:theme = "@style/AppTheme.PopupOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mt_speechMode="false"
+            app:mt_hint="Methanol"
+            app:mt_maxSuggestionsCount="10"
+            app:mt_placeholder = "Search Chemical"
+            app:mt_navIconEnabled = "true"
+            app:mt_textColor = "#000"
+            app:mt_highlightedTextColor = "#0069c0"
+            app:mt_roundedSearchBarEnabled = "true"
+            app:mt_dividerColor = "#000"
+            android:id="@+id/searchBar"
+            android:padding="10dp"
+            android:layout_marginTop = "100dp"
+            android:layout_marginRight = "5dp"
+            android:layout_marginLeft = "5dp"
+
+            />
+
 
 </RelativeLayout>
