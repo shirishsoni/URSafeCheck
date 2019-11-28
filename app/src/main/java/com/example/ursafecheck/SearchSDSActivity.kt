@@ -23,7 +23,6 @@ class SearchSDSActivity : AppCompatActivity(), MaterialSearchBar.OnSearchActionL
        // searchBar.setLastSuggestions(list)
      //   searchBar.inflateMenu(R.menu.Main)
      //   searchBar.getMenu().setOnMenuItemClickListener(this)
-
     }
 
    /* override fun onDestroy() {
@@ -38,7 +37,7 @@ class SearchSDSActivity : AppCompatActivity(), MaterialSearchBar.OnSearchActionL
 
     override fun onSearchConfirmed(text: CharSequence?) {
         val modifiedText:String = text.toString()
-        val commonTextAppender = "SDS"
+        val commonTextAppender = "SDS "
         startSearch("$modifiedText $commonTextAppender", true, null, true);
 
     }

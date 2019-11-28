@@ -49,7 +49,7 @@
 
 
         <EditText
-            android:id="@+id/ureginaEmail_text"
+            android:id="@+id/login_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="2dp"
@@ -59,7 +59,7 @@
             android:padding="12dp" />
 
         <EditText
-            android:id="@+id/password_text"
+            android:id="@+id/login_pwd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/edit_text_bottom"
@@ -69,7 +69,7 @@
 
 
         <Button
-            android:id="@+id/Login"
+            android:id="@+id/login_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -82,7 +82,7 @@
             android:textSize="17sp" />
 
         <TextView
-            android:id="@+id/signUp_text"
+            android:id="@+id/login_signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
@@ -95,7 +95,7 @@
             android:textColor="#00675b"
             android:fontFamily="sans-serif"/>
         <TextView
-            android:id="@+id/forgotPassword_text"
+            android:id="@+id/login_forgot_pwd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="5dp"

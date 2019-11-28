@@ -3,14 +3,8 @@ package com.example.ursafecheck
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 
 import kotlinx.android.synthetic.main.activity_main.*
-import com.android.volley.toolbox.JsonObjectRequest
-import com.android.volley.*
-import com.android.volley.toolbox.Volley
-import com.android.volley.toolbox.StringRequest
-import java.net.URL
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,17 +12,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-      signUp_text.setOnClickListener(){
+      login_signup.setOnClickListener(){
           val intent = Intent(this, SignupActivity::class.java)
           startActivity(intent)
       }
 
-      Login.setOnClickListener{
+      login_btn.setOnClickListener{
           val intent = Intent(this, HomapageActivity::class.java)
           startActivity(intent)
       }
-      forgotPassword_text.setOnClickListener{
-          val intent = Intent(this, forgotPasswordActivity::class.java)
+      login_forgot_pwd.setOnClickListener{
+          val intent = Intent(this, ForgotPasswordActivity::class.java)
           startActivity(intent)
       }
     }

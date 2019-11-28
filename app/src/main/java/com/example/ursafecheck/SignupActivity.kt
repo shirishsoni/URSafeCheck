@@ -18,16 +18,16 @@ class SignupActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
 
-        signIn_text.setOnClickListener{
+        signup_signin.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
-        signup_btn.setOnClickListener(){
+        signup_submit.setOnClickListener(){
             val jsonObj = JsonObject()
-            val Fname = firstName_text.text.toString().trim()
-            val Lname = lastName_text.text.toString().trim()
-            val StdEmpID = studentID_text.text.toString().trim()
+            val Fname = signup_fname.text.toString().trim()
+            val Lname = signup_lname.text.toString().trim()
+            val StdEmpID = signup_id.text.toString().trim()
             val email = "tempemail@uregina.ca"
             val Pwd = "123456"
             jsonObj.addProperty("StdEmpID", StdEmpID)

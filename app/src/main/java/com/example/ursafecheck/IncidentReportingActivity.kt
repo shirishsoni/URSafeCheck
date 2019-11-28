@@ -6,12 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
-import androidx.annotation.Nullable
-import androidx.appcompat.widget.ButtonBarLayout
 import com.google.android.material.button.MaterialButton
-import kotlinx.android.synthetic.main.activity_incident_reporting.*
 import java.util.*
-import javax.microedition.khronos.egl.EGLDisplay
 
 class IncidentReportingActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -35,7 +31,7 @@ class IncidentReportingActivity : AppCompatActivity(), View.OnClickListener {
 
         // spinner for Employment Category
         val emplyoee_types = arrayOf("Student", "Faculty", "Employee", "Visitor", "Contractor")
-        val empSpinner: Spinner = findViewById(R.id.employement_category_spinner)
+        val empSpinner: Spinner = findViewById(R.id.ir_employment_category_spinner)
         if (empSpinner != null) {
             val arrayAdapter =
                 ArrayAdapter(this, android.R.layout.simple_spinner_item, emplyoee_types)
@@ -45,7 +41,7 @@ class IncidentReportingActivity : AppCompatActivity(), View.OnClickListener {
 
         // spinner for Medical Treatment received
         val medical_treatment = arrayOf("Family Physician", "Hospital", "Other", "No")
-        val medicalSpinner: Spinner = findViewById(R.id.medical_treatment_spinner)
+        val medicalSpinner: Spinner = findViewById(R.id.ir_medical_treatment_spinner)
         if (medicalSpinner != null) {
             val arrayAdapter =
                 ArrayAdapter(this, android.R.layout.simple_spinner_item, medical_treatment)
@@ -54,10 +50,10 @@ class IncidentReportingActivity : AppCompatActivity(), View.OnClickListener {
         }
 
         // date and time picker and its view binders
-        btnDatePicker = findViewById(R.id.inc_btn_date)
-        btnTimePicker = findViewById(R.id.inc_btn_time)
-        txtDate = findViewById(R.id.inc_date_field)
-        txtTime= findViewById(R.id.inc_time_field)
+        btnDatePicker = findViewById(R.id.ir_btn_date)
+        btnTimePicker = findViewById(R.id.ir_btn_time)
+        txtDate = findViewById(R.id.ir_date_field)
+        txtTime= findViewById(R.id.ir_time_field)
 
         btnDatePicker.setOnClickListener(this)
         btnTimePicker.setOnClickListener(this)

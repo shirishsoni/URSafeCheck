@@ -47,7 +47,7 @@
         android:gravity="center">
 
         <EditText
-            android:id="@+id/firstName_text"
+            android:id="@+id/signup_fname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="2dp"
@@ -58,7 +58,7 @@
             android:autofillHints="" />
 
         <EditText
-            android:id="@+id/lastName_text"
+            android:id="@+id/signup_lname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="2dp"
@@ -69,7 +69,7 @@
             android:autofillHints="" />
 
         <EditText
-            android:id="@+id/studentID_text"
+            android:id="@+id/signup_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="2dp"
@@ -80,7 +80,7 @@
             android:autofillHints="" />
 
         <EditText
-            android:id="@+id/ureginaEmail_text"
+            android:id="@+id/signup_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/edit_text_bottom"
@@ -90,6 +90,7 @@
             android:autofillHints="" />
 
         <Button
+            android:id="@+id/signup_submit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -99,10 +100,10 @@
             android:textAllCaps="false"
             android:textColor="#00675b"
             android:textSize="17sp"
-            android:id="@+id/signup_btn"/>
+            />
 
         <TextView
-            android:id="@+id/signIn_text"
+            android:id="@+id/signup_signin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"

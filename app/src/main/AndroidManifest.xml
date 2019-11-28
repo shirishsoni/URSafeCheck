@@ -18,7 +18,7 @@
         <activity android:name=".RiskAssessmentActivity" />
         <activity android:name=".IncidentReportingActivity" />
         <activity android:name=".SearchSDSActivity" />
-        <activity android:name=".forgotPasswordActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".HomapageActivity" />
         <activity
             android:name=".SignupActivity"

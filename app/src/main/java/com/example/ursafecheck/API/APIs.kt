@@ -24,7 +24,7 @@ class APIs {
 
     companion object {
         private val retrofit = Retrofit.Builder()
-            .baseUrl("http://192.168.43.211:5000")
+            .baseUrl("http://192.168.43.227:5000")
             .addConverterFactory(GsonConverterFactory.create(GsonBuilder().create()))
             .build()
 
