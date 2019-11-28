@@ -28,11 +28,9 @@ class SignupActivity : AppCompatActivity() {
             val Fname = signup_fname.text.toString().trim()
             val Lname = signup_lname.text.toString().trim()
             val StdEmpID = signup_id.text.toString().trim()
-            val email = "tempemail@uregina.ca"
-            val Pwd = "123456"
+            val email = signup_email.text.toString().trim()
             jsonObj.addProperty("StdEmpID", StdEmpID)
             jsonObj.addProperty("Email", email)
-            jsonObj.addProperty("Pwd", Pwd)
             jsonObj.addProperty("FName", Fname)
             jsonObj.addProperty("LName",Lname)
 
