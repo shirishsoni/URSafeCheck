@@ -14,7 +14,6 @@ class SearchSDSActivity : AppCompatActivity(), MaterialSearchBar.OnSearchActionL
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search_sds)
-
         searchBar  = findViewById(R.id.searchBar) as MaterialSearchBar
         searchBar.setHint("Methanol")
         searchBar.setSpeechMode(true)

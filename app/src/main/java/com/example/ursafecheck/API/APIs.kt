@@ -24,6 +24,14 @@ class APIs {
         @Headers("Content-type: application/json")
         @POST("/api/login")
         fun login(@Body body: JsonObject): Call<ResponseBody>
+
+        @Headers("Content-type: application/json")
+        @POST("/api/forgot")
+        fun forgot(@Body body: JsonObject): Call<ResponseBody>
+
+        @Headers("Content-type: application/json")
+        @POST("/api/ResetPwd")
+        fun resetPwd(@Body body: JsonObject): Call<ResponseBody>
     }
 
     companion object {

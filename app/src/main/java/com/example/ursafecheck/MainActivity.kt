@@ -3,6 +3,7 @@ package com.example.ursafecheck
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.ContactsContract
 import android.widget.Toast
 import com.example.ursafecheck.API.APIs
 import com.google.gson.JsonObject
@@ -43,29 +44,47 @@ class MainActivity : AppCompatActivity() {
                   override fun onResponse(call: Call<ResponseBody>, response: Response<ResponseBody>) {
                       if (response.isSuccessful) {
                           msg = response.body()?.string().toString().trim()
-                          println(msg)
                           println("---TTTT :: POST msg from server :: " + msg)
                           Toast.makeText(applicationContext, msg, Toast.LENGTH_SHORT).show()
 
+                          val res1 = "{\"response\":\"1\"}"
+                          val res2 = "{\"response\":\"2\"}"
+                          val res3 = "{\"response\":\"3\"}"
+
+                          if (msg == res1) // Login Successful
+                          {
+                              next1()
+                          }
+                          else if(msg == res2) // First time login
+                          {
+                              next2(Email)
+                          }
+                          else if(msg == res3) // Incorrect username or password
+                          {
+                              Toast.makeText(applicationContext, "Incorrect Password", Toast.LENGTH_SHORT).show()
+                          }
                       }
                   }
               })
-          //val temp = "{\"response\":\"1\"}"
-          //println(temp)
-          //println(msg == temp)
-          //if (msg.equals(temp)) {
-              val intent = Intent(this, HomapageActivity::class.java)
-              startActivity(intent)
-          //}
-          //else{
-           //   Toast.makeText(applicationContext, "Nope", Toast.LENGTH_SHORT).show()
-          //}
+
 
 
       }
+
       login_forgot_pwd.setOnClickListener{
           val intent = Intent(this, ForgotPasswordActivity::class.java)
           startActivity(intent)
       }
+    }
+
+    fun next1(){
+        val intent = Intent(this, HomapageActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun next2(Email: String){
+        val intent = Intent(this, ResetPassword::class.java)
+        intent.putExtra("Username",Email)
+        startActivity(intent)
     }
 }
