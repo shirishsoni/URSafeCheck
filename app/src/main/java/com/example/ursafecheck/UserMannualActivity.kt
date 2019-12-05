@@ -14,7 +14,7 @@ import android.util.Log
 class UserMannualActivity : AppCompatActivity(), OnPageChangeListener, OnLoadCompleteListener {
 
     private val TAG = MainActivity::class.java.simpleName
-    val SAMPLE_FILE = "Faculty of Science Laboratory Safety Manual.pdf"
+    val LSM_FILE = "Faculty of Science Laboratory Safety Manual.pdf"
     var pdfView: PDFView? = null
     var pageNumber: Int? = 0
     var pdfFileName: String? = null
@@ -24,14 +24,14 @@ class UserMannualActivity : AppCompatActivity(), OnPageChangeListener, OnLoadCom
         setContentView(R.layout.activity_user_mannual)
 
         pdfView = findViewById(R.id.pdfView) as PDFView
-        displayFromAsset(SAMPLE_FILE)
+        displayFromAsset(LSM_FILE)
     }
 
     private fun displayFromAsset(assetFileName: String) {
         pdfFileName = assetFileName
 
         pageNumber?.let {
-            pdfView?.fromAsset(SAMPLE_FILE)?.defaultPage(it)?.enableSwipe(true)
+            pdfView?.fromAsset(LSM_FILE)?.defaultPage(it)?.enableSwipe(true)
                 ?.swipeHorizontal(false)
                 ?.onPageChange(this)
                 ?.enableAnnotationRendering(true)

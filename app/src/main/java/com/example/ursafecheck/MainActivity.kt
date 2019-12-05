@@ -26,6 +26,13 @@ class MainActivity : AppCompatActivity() {
       }
 
       login_btn.setOnClickListener{
+          //do not remove following code segment.
+          //code has been edited from the testing point of view, and will be removed in final version.
+          ////
+          val intent = Intent(this, HomapageActivity::class.java)
+          startActivity(intent)
+          ////
+
           var msg = "temp"
           val jsonObject = JsonObject()
           val Email = login_email.text.toString().trim()
@@ -53,7 +60,7 @@ class MainActivity : AppCompatActivity() {
 
                           if (msg == res1) // Login Successful
                           {
-                              next1()
+                             // next1()
                           }
                           else if(msg == res2) // First time login
                           {

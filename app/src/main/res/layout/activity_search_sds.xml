@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Theme.MaterialComponents.NoActionBar"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -27,9 +28,13 @@
     </LinearLayout>
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="100dp">
 
         <com.mancj.materialsearchbar.MaterialSearchBar
-            android:theme = "@style/AppTheme.PopupOverlay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:mt_speechMode="false"
@@ -43,11 +48,186 @@
             app:mt_dividerColor = "#000"
             android:id="@+id/searchBar"
             android:padding="10dp"
-            android:layout_marginTop = "100dp"
             android:layout_marginRight = "5dp"
             android:layout_marginLeft = "5dp"
-
             />
 
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available Locally"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textSize="24dp"
+                android:textColor="#fff">
+            </androidx.appcompat.widget.AppCompatTextView>
 
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:foregroundGravity="center"
+            android:layout_gravity="center_horizontal">
+
+            <!--- Ammonia Chip-->
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Ammonia"
+                android:text="Ammonia"
+                android:layout_margin="2dp"
+                app:chipBackgroundColor="@color/colorAccent"
+                app:chipMinHeight="35dp"
+                app:showMotionSpec="@anim/fade_in_left"
+                android:textColor="#000"
+                android:onClick="onChipClick">
+            </com.google.android.material.chip.Chip>
+
+            <!--- Acetone Chip-->
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Acetone"
+                android:text="Acetone"
+                android:layout_margin="2dp"
+                app:chipBackgroundColor="@color/colorAccent"
+                app:chipMinHeight="35dp"
+                app:showMotionSpec="@anim/fade_in_left"
+                android:textColor="#000">
+                >
+            </com.google.android.material.chip.Chip>
+
+            <!--- Ethanol Chip-->
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Ethanol"
+                android:text="Ethanol"
+                android:layout_margin="2dp"
+                app:chipBackgroundColor="@color/colorAccent"
+                app:chipMinHeight="35dp"
+                app:showMotionSpec="@anim/fade_in_left"
+                android:textColor="#000">>
+            </com.google.android.material.chip.Chip>
+
+            <!--- Nitric Acid Chip-->
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Nitric_Acid"
+                android:text="Nitric Acid"
+                android:layout_margin="2dp"
+                app:chipBackgroundColor="@color/colorAccent"
+                app:chipMinHeight="35dp"
+                app:showMotionSpec="@anim/fade_in_left"
+                android:textColor="#000">>
+            </com.google.android.material.chip.Chip>
+
+            <!--- Ethyl Ether Chip-->
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Ethyl_Ether"
+                android:text="Ethyl Ether"
+                android:layout_margin="5dp"
+                app:chipBackgroundColor="@color/colorAccent"
+                app:chipMinHeight="35dp"
+                app:showMotionSpec="@anim/fade_in_left"
+                android:textColor="#000">>
+            </com.google.android.material.chip.Chip>
+
+            <!--- Methanol Chip-->
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Methanol"
+                android:text="Methanol"
+                android:layout_margin="2dp"
+                app:chipBackgroundColor="@color/colorAccent"
+                app:chipMinHeight="35dp"
+                app:showMotionSpec="@anim/fade_in_left"
+                android:textColor="#000">>
+            </com.google.android.material.chip.Chip>
+
+            <!--- Glacial Acetic Acid Chip-->
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Glaoial_acetic_acid"
+                android:text="Glacial Acetic Acid"
+                android:layout_margin="2dp"
+                app:chipBackgroundColor="@color/colorAccent"
+                app:chipMinHeight="35dp"
+                app:showMotionSpec="@anim/fade_in_left"
+                android:textColor="#000"    >
+            </com.google.android.material.chip.Chip>
+
+            <!--- Hydrochloric Acid Chip-->
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Hydrochloric_Acid"
+                android:text="Hydrochloric Acid"
+                android:layout_margin="2dp"
+                app:chipBackgroundColor="@color/colorAccent"
+                app:chipMinHeight="35dp"
+                app:showMotionSpec="@anim/fade_in_left"
+                android:textColor="#000">
+            </com.google.android.material.chip.Chip>
+
+            <!--- Hydrogen Peroxide Chip-->
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Hydrogen_Peroxide"
+                android:text="Hydrogen Peroxide"
+                android:layout_margin="2dp"
+                app:chipBackgroundColor="@color/colorAccent"
+                app:chipMinHeight="35dp"
+                app:showMotionSpec="@anim/fade_in_left"
+                android:textColor="#000">
+            </com.google.android.material.chip.Chip>
+
+
+            <!--- Sodium Hydroxide Chip-->
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Sodium_Hydroxide"
+                android:text="Sodium Hydroxide"
+                android:layout_margin="2dp"
+                app:chipBackgroundColor="@color/colorAccent"
+                app:chipMinHeight="35dp"
+                app:showMotionSpec="@anim/fade_in_left"
+                android:textColor="#000">>
+            </com.google.android.material.chip.Chip>
+
+            <!--- Sodium Hypochlorite Chip-->
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Sodium_Hypochlorite"
+                android:text="Sodium Hypochlorite"
+                android:layout_margin="2dp"
+                app:chipBackgroundColor="@color/colorAccent"
+                app:chipMinHeight="35dp"
+                app:showMotionSpec="@anim/fade_in_left"
+                android:textColor="#000">
+            </com.google.android.material.chip.Chip>
+
+        </com.google.android.material.chip.ChipGroup>
+        </LinearLayout>
 </RelativeLayout>

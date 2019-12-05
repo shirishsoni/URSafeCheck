@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ResetPassword"></activity>
+        <activity android:name=".FirstLoginActivity"></activity>
+        <activity android:name=".ResetPassword" />
         <activity android:name=".EmergencyContacts" />
         <activity android:name=".OthersActivity" />
         <activity android:name=".UserMannualActivity" />
