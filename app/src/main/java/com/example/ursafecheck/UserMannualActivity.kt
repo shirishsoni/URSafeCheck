@@ -25,6 +25,7 @@ class UserMannualActivity : AppCompatActivity(), OnPageChangeListener, OnLoadCom
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user_mannual)
 
+        //Displaying the pdf
         pdfView = findViewById(R.id.pdfView) as PDFView
         displayFromAsset(LSM_FILE)
     }

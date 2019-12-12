@@ -11,7 +11,7 @@ import androidx.core.app.ComponentActivity.ExtraData
 import androidx.core.content.ContextCompat.getSystemService
 import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 
-
+// For Emergency Contacts activity
 
 class EmergencyContacts : AppCompatActivity() {
 
@@ -21,6 +21,8 @@ class EmergencyContacts : AppCompatActivity() {
 
     }
     fun CardActivity(view: View) {
+        //Checking which card was clicked on
+        //Performing the respective actions
         if((view as CardView) == em_c1)
         {
             // launching phone app with 911 number
@@ -31,14 +33,14 @@ class EmergencyContacts : AppCompatActivity() {
         }
         else if((view as CardView) == em_c2)
         {
-            // launching phone app with advisors number
+            // launching phone app with advisor's number
             val intent = Intent(Intent.ACTION_DIAL)
             intent.data = Uri.parse("tel:306-585-4769")
             startActivity(intent)
         }
         else
         {
-            // launching phone app with campus security number
+            // launching phone app with campus security's number
             val intent = Intent(Intent.ACTION_DIAL)
             intent.data = Uri.parse("tel:306-585-4999")
             startActivity(intent)

@@ -13,6 +13,7 @@ import kotlinx.android.synthetic.main.activity_homapage.*
 import java.lang.Math.log
 
 
+
 class HomapageActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

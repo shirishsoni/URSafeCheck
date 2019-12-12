@@ -20,24 +20,33 @@ class ForgotPasswordActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forgot_password)
 
+        //Code for going to back to log in page
         goBack_text.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
+        //The procedure for sending a new OTP to the user's email id
         forgotPassword_btn.setOnClickListener{
+            //Creating JSON object
             val jsonObject = JsonObject()
+
+            //Fetching email id from text box
             val Email = forgot_email.text.toString().trim()
+
+            //Adding all the values to the JSON object
             jsonObject.addProperty("Email",Email)
             APIs
                 .service
                 .forgot(jsonObject)
                 .enqueue(object : Callback<ResponseBody> {
+                    //code if the RESTful API sends failure response
                     override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
                         println("---TTTT :: POST Throwable EXCEPTION:: " + t.message)
                         Toast.makeText(applicationContext, "Invalid Username or password", Toast.LENGTH_SHORT).show()
                     }
 
+                    //If RESTful API responds a successful response
                     override fun onResponse(call: Call<ResponseBody>, response: Response<ResponseBody>) {
                         if (response.isSuccessful) {
                             val msg = response.body()?.string().toString().trim()
@@ -47,6 +56,7 @@ class ForgotPasswordActivity : AppCompatActivity() {
                     }
                 })
 
+            //Going back to the log in page
             val intent = Intent(this, MainActivity::class.java )
             startActivity(intent)
 
