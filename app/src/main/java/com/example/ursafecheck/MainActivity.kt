@@ -92,7 +92,6 @@ class MainActivity : AppCompatActivity() {
               //Incase the user enters an email id which is not a uregina.ca email id
               Toast.makeText(applicationContext,"Please enter uregina email address", Toast.LENGTH_LONG).show()
           }
-
       }
 
       //If the user clicks on forgot password text
