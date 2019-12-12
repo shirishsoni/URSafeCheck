@@ -29,31 +29,38 @@ class SignupActivity : AppCompatActivity() {
             val Lname = signup_lname.text.toString().trim()
             val StdEmpID = signup_id.text.toString().trim()
             val email = signup_email.text.toString().trim()
-            jsonObj.addProperty("StdEmpID", StdEmpID)
-            jsonObj.addProperty("Email", email)
-            jsonObj.addProperty("FName", Fname)
-            jsonObj.addProperty("LName",Lname)
+            val email_string = email.substringAfter("@")
+            if (email_string == "uregina.ca") {
+                jsonObj.addProperty("StdEmpID", StdEmpID)
+                jsonObj.addProperty("Email", email)
+                jsonObj.addProperty("FName", Fname)
+                jsonObj.addProperty("LName",Lname)
 
 //  POST demo
-            APIs
-                .service
-                .addUser(jsonObj)
-                .enqueue(object : Callback<ResponseBody> {
-                    override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
-                        println("---TTTT :: POST Throwable EXCEPTION:: " + t.message)
-                    }
-
-                    override fun onResponse(call: Call<ResponseBody>, response: Response<ResponseBody>) {
-                        if (response.isSuccessful) {
-                            val msg = response.body()?.string()
-                            println("---TTTT :: POST msg from server :: " + msg)
-                            Toast.makeText(applicationContext, msg, Toast.LENGTH_SHORT).show()
-
+                APIs
+                    .service
+                    .addUser(jsonObj)
+                    .enqueue(object : Callback<ResponseBody> {
+                        override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
+                            println("---TTTT :: POST Throwable EXCEPTION:: " + t.message)
                         }
-                    }
-                })
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+
+                        override fun onResponse(call: Call<ResponseBody>, response: Response<ResponseBody>) {
+                            if (response.isSuccessful) {
+                                val msg = response.body()?.string()
+                                println("---TTTT :: POST msg from server :: " + msg)
+                                Toast.makeText(applicationContext, msg, Toast.LENGTH_SHORT).show()
+
+                            }
+                        }
+                    })
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+            }
+            else{
+                Toast.makeText(applicationContext,"Please enter uregina email address", Toast.LENGTH_LONG).show()
+            }
+
         }
     }
 }

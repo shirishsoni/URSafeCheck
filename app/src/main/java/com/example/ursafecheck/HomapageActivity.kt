@@ -20,40 +20,47 @@ class HomapageActivity : AppCompatActivity() {
         setContentView(R.layout.activity_homapage)
     }
 
+    // followings are the function call to launch the activites from the home page of this application
     fun CardActivity(view: View) {
 
         if((view as CardView) == c1)
         {
+            // launching Search SDS Activity
             val intent = Intent(this, SearchSDSActivity::class.java)
             startActivity(intent)
 
         }
         else if((view as CardView) == c2)
         {
+            // Launching Incident Report Reporting Activity
             val intent = Intent(this, IncidentReportingActivity::class.java)
             startActivity(intent)
 
         }
         else if((view as CardView) == c3)
         {
+            // Launching Risk Assessment Activity
             val intent = Intent(this, RiskAssessmentActivity::class.java)
             startActivity(intent)
 
         }
         else if((view as CardView) == c4)
         {
+            // Launching Others Activity
             val intent = Intent(this, OthersActivity::class.java)
             startActivity(intent)
 
         }
         else if((view as CardView) == c5)
         {
+            // Launching User Mannual Activity
             val intent = Intent(this, UserMannualActivity::class.java)
             startActivity(intent)
 
         }
         else
         {
+            // Launching Emergency Contacts Activity
             val intent = Intent(this, EmergencyContacts::class.java)
             startActivity(intent)
         }

@@ -13,7 +13,9 @@ import android.util.Log
 
 class UserMannualActivity : AppCompatActivity(), OnPageChangeListener, OnLoadCompleteListener {
 
+    // variables for the PDF Viewer
     private val TAG = MainActivity::class.java.simpleName
+    // The following file is saved in the assest folder
     val LSM_FILE = "Faculty of Science Laboratory Safety Manual.pdf"
     var pdfView: PDFView? = null
     var pageNumber: Int? = 0
@@ -27,6 +29,7 @@ class UserMannualActivity : AppCompatActivity(), OnPageChangeListener, OnLoadCom
         displayFromAsset(LSM_FILE)
     }
 
+   //Providing the attribute for PDF
     private fun displayFromAsset(assetFileName: String) {
         pdfFileName = assetFileName
 
@@ -40,16 +43,19 @@ class UserMannualActivity : AppCompatActivity(), OnPageChangeListener, OnLoadCom
                 ?.load()
         }
     }
+    // Handling the page change event in the user device
     override fun onPageChanged(page: Int, pageCount: Int) {
         pageNumber = page;
         setTitle(String.format("%s %s / %s", pdfFileName, page + 1, pageCount));
     }
 
+    //  Defining the view when we complete the loading of  PDF
     override fun loadComplete(nbPages: Int) {
         val meta = pdfView?.getDocumentMeta()
         printBookmarksTree(pdfView?.getTableOfContents() as MutableList<PdfDocument.Bookmark>, "-")
     }
 
+    // This mutable Trees is responsible for handling the pdf and its operations
     fun printBookmarksTree(tree: MutableList<PdfDocument.Bookmark>, sep: String) {
         for (b in tree) {
 

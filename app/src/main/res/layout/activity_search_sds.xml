@@ -34,6 +34,8 @@
             android:orientation="vertical"
             android:layout_marginTop="100dp">
 
+            <!-- Material Search bar for searching sds
+              This search has been provided by the Mansour https://mancj.github.io/ -->
         <com.mancj.materialsearchbar.MaterialSearchBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -62,6 +64,7 @@
                 android:textColor="#fff">
             </androidx.appcompat.widget.AppCompatTextView>
 
+            <!-- We have defined chips which shows the SDS available locally-->
         <com.google.android.material.chip.ChipGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -79,9 +82,10 @@
                 android:id="@+id/Ammonia"
                 android:text="Ammonia"
                 android:layout_margin="2dp"
-                app:chipBackgroundColor="@color/colorAccent"
+
                 app:chipMinHeight="35dp"
                 app:showMotionSpec="@anim/fade_in_left"
+                app:chipBackgroundColor="#fff"
                 android:textColor="#000"
                 android:onClick="onChipClick">
             </com.google.android.material.chip.Chip>
@@ -94,7 +98,7 @@
                 android:id="@+id/Acetone"
                 android:text="Acetone"
                 android:layout_margin="2dp"
-                app:chipBackgroundColor="@color/colorAccent"
+                app:chipBackgroundColor="#fff"
                 app:chipMinHeight="35dp"
                 app:showMotionSpec="@anim/fade_in_left"
                 android:textColor="#000">
@@ -109,7 +113,7 @@
                 android:id="@+id/Ethanol"
                 android:text="Ethanol"
                 android:layout_margin="2dp"
-                app:chipBackgroundColor="@color/colorAccent"
+                app:chipBackgroundColor="#fff"
                 app:chipMinHeight="35dp"
                 app:showMotionSpec="@anim/fade_in_left"
                 android:textColor="#000">>
@@ -123,7 +127,7 @@
                 android:id="@+id/Nitric_Acid"
                 android:text="Nitric Acid"
                 android:layout_margin="2dp"
-                app:chipBackgroundColor="@color/colorAccent"
+                app:chipBackgroundColor="#fff"
                 app:chipMinHeight="35dp"
                 app:showMotionSpec="@anim/fade_in_left"
                 android:textColor="#000">>
@@ -137,7 +141,7 @@
                 android:id="@+id/Ethyl_Ether"
                 android:text="Ethyl Ether"
                 android:layout_margin="5dp"
-                app:chipBackgroundColor="@color/colorAccent"
+                app:chipBackgroundColor="#fff"
                 app:chipMinHeight="35dp"
                 app:showMotionSpec="@anim/fade_in_left"
                 android:textColor="#000">>
@@ -151,7 +155,7 @@
                 android:id="@+id/Methanol"
                 android:text="Methanol"
                 android:layout_margin="2dp"
-                app:chipBackgroundColor="@color/colorAccent"
+                app:chipBackgroundColor="#fff"
                 app:chipMinHeight="35dp"
                 app:showMotionSpec="@anim/fade_in_left"
                 android:textColor="#000">>
@@ -165,7 +169,7 @@
                 android:id="@+id/Glaoial_acetic_acid"
                 android:text="Glacial Acetic Acid"
                 android:layout_margin="2dp"
-                app:chipBackgroundColor="@color/colorAccent"
+                app:chipBackgroundColor="#fff"
                 app:chipMinHeight="35dp"
                 app:showMotionSpec="@anim/fade_in_left"
                 android:textColor="#000"    >
@@ -179,7 +183,7 @@
                 android:id="@+id/Hydrochloric_Acid"
                 android:text="Hydrochloric Acid"
                 android:layout_margin="2dp"
-                app:chipBackgroundColor="@color/colorAccent"
+                app:chipBackgroundColor="#fff"
                 app:chipMinHeight="35dp"
                 app:showMotionSpec="@anim/fade_in_left"
                 android:textColor="#000">
@@ -193,7 +197,7 @@
                 android:id="@+id/Hydrogen_Peroxide"
                 android:text="Hydrogen Peroxide"
                 android:layout_margin="2dp"
-                app:chipBackgroundColor="@color/colorAccent"
+                app:chipBackgroundColor="#fff"
                 app:chipMinHeight="35dp"
                 app:showMotionSpec="@anim/fade_in_left"
                 android:textColor="#000">
@@ -208,7 +212,7 @@
                 android:id="@+id/Sodium_Hydroxide"
                 android:text="Sodium Hydroxide"
                 android:layout_margin="2dp"
-                app:chipBackgroundColor="@color/colorAccent"
+                app:chipBackgroundColor="#fff"
                 app:chipMinHeight="35dp"
                 app:showMotionSpec="@anim/fade_in_left"
                 android:textColor="#000">>
@@ -222,7 +226,7 @@
                 android:id="@+id/Sodium_Hypochlorite"
                 android:text="Sodium Hypochlorite"
                 android:layout_margin="2dp"
-                app:chipBackgroundColor="@color/colorAccent"
+                app:chipBackgroundColor="#fff"
                 app:chipMinHeight="35dp"
                 app:showMotionSpec="@anim/fade_in_left"
                 android:textColor="#000">

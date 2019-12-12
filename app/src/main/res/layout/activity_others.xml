@@ -5,9 +5,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg">
 
-
-
-
         <TextView
             android:layout_width="245dp"
             android:layout_height="87dp"

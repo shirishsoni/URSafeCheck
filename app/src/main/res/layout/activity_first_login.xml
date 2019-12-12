@@ -92,7 +92,8 @@
             android:padding="12dp"
             android:autofillHints="" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:id="@+id/signup_submit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -101,7 +102,7 @@
             android:foreground="?android:attr/selectableItemBackground"
             android:text="Reset Password"
             android:textAllCaps="false"
-            android:textColor="#00675b"
+            android:textColor="#FFF"
             android:textSize="17sp"
             />
     </LinearLayout>

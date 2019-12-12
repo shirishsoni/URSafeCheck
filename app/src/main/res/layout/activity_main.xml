@@ -68,17 +68,18 @@
             android:padding="12dp" />
 
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/login_btn"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@drawable/button"
-            android:fontFamily="sans-serif-black"
+            android:background="#fff"
+            android:fontFamily="sans-serif"
 
             android:text="LOGIN"
             android:textAllCaps="false"
-            android:textColor="#00675b"
+            android:textColor="#fff"
             android:textSize="17sp" />
 
         <TextView

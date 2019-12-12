@@ -41,7 +41,7 @@
          >
 
           <!-- R 1 C 1-->
-
+          <!-- card for Search SDS -->
           <androidx.cardview.widget.CardView
               android:id="@+id/c1"
               android:layout_width="0dp"
@@ -54,14 +54,17 @@
               android:clickable="true"
               android:onClick="CardActivity"
               app:cardCornerRadius="8dp"
-              app:cardElevation="8dp">
+              app:cardElevation="8dp"
+              >
 
                <LinearLayout
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
                    android:layout_gravity="center_horizontal|center_vertical"
-                   android:layout_margin="16dp"
-                   android:orientation="vertical">
+                   android:layout_margin="5dp"
+                   android:orientation="vertical"
+                   android:gravity="center"
+                   >
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -86,7 +89,7 @@
           </androidx.cardview.widget.CardView>
 
           <!-- R 1 C 2-->
-
+          <!-- card for Incident Reporting -->
           <androidx.cardview.widget.CardView
               android:id="@+id/c2"
               android:layout_width="0dp"
@@ -103,10 +106,11 @@
 
                <LinearLayout
                    android:layout_gravity="center_horizontal|center_vertical"
-                   android:layout_margin="16dp"
+                   android:layout_margin="5dp"
                    android:orientation="vertical"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content">
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center">
 
                     <ImageView
                         android:src="@drawable/incident_reporting"
@@ -131,7 +135,7 @@
           </androidx.cardview.widget.CardView>
 
           <!-- R 2 C 1-->
-
+          <!-- card for Risk Assessment -->
           <androidx.cardview.widget.CardView
               android:id="@+id/c3"
               android:layout_width="0dp"
@@ -148,10 +152,11 @@
 
                <LinearLayout
                    android:layout_gravity="center_horizontal|center_vertical"
-                   android:layout_margin="16dp"
+                   android:layout_margin="5dp"
                    android:orientation="vertical"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content">
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center">
 
                     <ImageView
                         android:src="@drawable/risk_assess_mgmt"
@@ -176,6 +181,7 @@
           </androidx.cardview.widget.CardView>
 
           <!-- R 2 C 2-->
+          <!-- card for Others -->
           <androidx.cardview.widget.CardView
               android:id="@+id/c4"
               android:layout_width="0dp"
@@ -192,10 +198,11 @@
 
                <LinearLayout
                    android:layout_gravity="center_horizontal|center_vertical"
-                   android:layout_margin="16dp"
+                   android:layout_margin="5dp"
                    android:orientation="vertical"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content">
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center">
 
                     <ImageView
                         android:src="@drawable/others"
@@ -220,6 +227,7 @@
           </androidx.cardview.widget.CardView>
 
           <!-- R 3 C 1-->
+          <!-- card for Lab Safety Manual -->
           <androidx.cardview.widget.CardView
               android:id="@+id/c5"
               android:layout_width="0dp"
@@ -236,10 +244,11 @@
 
                <LinearLayout
                    android:layout_gravity="center_horizontal|center_vertical"
-                   android:layout_margin="16dp"
+                   android:layout_margin="5dp"
                    android:orientation="vertical"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content">
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center">
 
                     <ImageView
                         android:src="@drawable/user_mannual"
@@ -264,6 +273,7 @@
           </androidx.cardview.widget.CardView>
 
           <!-- R 3 C 2-->
+          <!-- card for Emergency Contact -->
           <androidx.cardview.widget.CardView
               android:id="@+id/c6"
               android:layout_width="0dp"
@@ -280,10 +290,11 @@
 
                <LinearLayout
                    android:layout_gravity="center_horizontal|center_vertical"
-                   android:layout_margin="16dp"
+                   android:layout_margin="5dp"
                    android:orientation="vertical"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content">
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center">
 
                     <ImageView
                         android:src="@drawable/contacts"
