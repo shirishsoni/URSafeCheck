@@ -6,7 +6,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import com.example.ursafecheck.API.APIs
 import com.google.android.material.button.MaterialButton
+import com.google.gson.JsonObject
+import kotlinx.android.synthetic.main.activity_incident_reporting.*
+import okhttp3.ResponseBody
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 import java.util.*
 
 class IncidentReportingActivity : AppCompatActivity(), View.OnClickListener {
@@ -63,6 +70,47 @@ class IncidentReportingActivity : AppCompatActivity(), View.OnClickListener {
         // Launching Date and Time Picker
         btnDatePicker.setOnClickListener(this)
         btnTimePicker.setOnClickListener(this)
+
+
+        ir_submit_btn.setOnClickListener(){
+            val jsonObj = JsonObject()
+            //Fetching all the values from the form
+            val Fname = ir_fname.text.toString().trim()
+            val address = ir_address.text.toString().trim()
+            val city = ir_city.text.toString().trim()
+            val postal = ir_postal_code.text.toString().trim()
+            val work_phone = ir_work_phone.text.toString().trim()
+            val personal_phone = ir_personal_phone.text.toString().trim()
+
+            jsonObj.addProperty("Fname", Fname)
+            jsonObj.addProperty("address", address)
+            jsonObj.addProperty("city", city)
+            jsonObj.addProperty("postal",postal)
+            jsonObj.addProperty("workPhone",work_phone)
+            jsonObj.addProperty("personalPhone",personal_phone)
+
+            APIs
+                .service
+                .ifFormSubmit(jsonObj)
+                .enqueue(object : Callback<ResponseBody>{
+                    //On failure of API call
+                    override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
+                        println("---TTTT :: POST Throwable EXCEPTION:: " + t.message)
+                    }
+
+                    //On successful response from the API
+                    override fun onResponse(call: Call<ResponseBody>, response: Response<ResponseBody>) {
+                        if (response.isSuccessful) {
+                            val msg = response.body()?.string()
+                            println("---TTTT :: POST msg from server :: " + msg)
+                            Toast.makeText(applicationContext, msg, Toast.LENGTH_SHORT).show()
+
+                        }
+                    }
+                })
+        }
+
+
 
     }
 

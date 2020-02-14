@@ -36,13 +36,17 @@ class APIs {
         @Headers("Content-type: application/json")
         @POST("/api/ResetPwd")
         fun resetPwd(@Body body: JsonObject): Call<ResponseBody>
+
+        @Headers("Content-type: application/json")
+        @POST("/api/irForm")
+        fun ifFormSubmit(@Body body: JsonObject): Call<ResponseBody>
     }
 
     // Retrofit generates the final request URL by embedding the IP
     // address of the server and the request
     companion object {
         private val retrofit = Retrofit.Builder()
-            .baseUrl("http://192.168.43.227:5000")
+            .baseUrl("http://142.3.71.38:5000")
             .addConverterFactory(GsonConverterFactory.create(GsonBuilder().create()))
             .build()
 
