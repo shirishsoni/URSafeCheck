@@ -81,6 +81,19 @@ class IncidentReportingActivity : AppCompatActivity(), View.OnClickListener {
             val postal = ir_postal_code.text.toString().trim()
             val work_phone = ir_work_phone.text.toString().trim()
             val personal_phone = ir_personal_phone.text.toString().trim()
+            val id = ir_id.text.toString().trim()
+            val occupation = ir_occupation.text.toString().trim()
+            val dept = ir_dept.text.toString().trim()
+            val date = ir_date_field.text.toString().trim()
+            val time = ir_time_field.text.toString().trim()
+            val building = ir_building_loc.text.toString().trim()
+            val room = ir_room_no.text.toString().trim()
+            val incident = ir_incident_occured.text.toString().trim()
+            val details = ir_detail_injury.text.toString().trim()
+            val initials = ir_initials.text.toString().trim()
+            val employment = empSpinner.selectedItem.toString().trim()
+            val treatment = medicalSpinner.selectedItem.toString().trim()
+
 
             jsonObj.addProperty("Fname", Fname)
             jsonObj.addProperty("address", address)
@@ -88,6 +101,18 @@ class IncidentReportingActivity : AppCompatActivity(), View.OnClickListener {
             jsonObj.addProperty("postal",postal)
             jsonObj.addProperty("workPhone",work_phone)
             jsonObj.addProperty("personalPhone",personal_phone)
+            jsonObj.addProperty("id",id)
+            jsonObj.addProperty("occupation",occupation)
+            jsonObj.addProperty("dept",dept)
+            jsonObj.addProperty("date",date)
+            jsonObj.addProperty("time",time)
+            jsonObj.addProperty("building",building)
+            jsonObj.addProperty("room",room)
+            jsonObj.addProperty("incident",incident)
+            jsonObj.addProperty("details",details)
+            jsonObj.addProperty("initials",initials)
+            jsonObj.addProperty("employment",employment)
+            jsonObj.addProperty("treatment",treatment)
 
             APIs
                 .service

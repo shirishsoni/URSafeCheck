@@ -242,6 +242,19 @@ def irForm():
     postal = json['postal']
     workPhone = json['workPhone']
     personalPhone = json['personalPhone']
+    StudentStaffid = json['id']
+    occupation = json['occupation']
+    dept = json['dept']
+    date = json['date']
+    time = json['time']
+    building = json['building']
+    room = json['room']
+    incident = json['incident']
+    details = json['details']
+    initials = json['initials']
+    employment = json['employment']
+    treatment = json['treatment']   
+    
 
     port = 465  # For SSL
     smtp_server = "smtp.gmail.com"
@@ -251,7 +264,15 @@ def irForm():
     sender_email = "shirishsoni128@gmail.com"  # Sender's email id
     password = "Shirish@123" #password for the email id
     #The content of the email
-    message = "Subject: Incident Report Submitted \n\nFull Name:"+str(Fname)+"\n\nAddress:"+str(address)+"\nCity:"+str(city)+"\nPostal Code:"+str(postal)+"\nWork Phone:"+str(workPhone)+"\nPersonal Phone:"+str(personalPhone)
+    message = "Subject: Incident Report Submitted \n\nFull Name: "+str(Fname)+\
+              "\n\nAddress: "+str(address)+"\n\nCity: "+str(city)+"\n\nPostal Code: "+str(postal)+\
+              "\n\nWork Phone: "+str(workPhone)+"\n\nPersonal Phone: "+str(personalPhone)+\
+              "\n\nStudent or Staff ID: "+str(StudentStaffid)+"\n\nOccupation: "+str(occupation)+\
+              "\n\nDepartment or Faculty: "+str(dept)+"\n\nEmployment Category: "+str(employment)+\
+              "\n\nOccurence Date: "+str(date)+"\n\nIncident Time: "+str(time)+\
+              "\n\nBuilding or off Campus Location: "+str(building)+"\n\nRoom Description or Room Number: "+str(room)+\
+              "\n\nHow Incident Occured: "+str(incident)+"\n\nDetails of Injury and Treatment: "+str(details)+\
+              "\n\nWas Medical Treatment Received: "+str(treatment)+"\n\nInitials: "+str(initials)
 
     #Sending the email
     context = ssl.create_default_context()
