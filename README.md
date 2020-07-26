@@ -23,7 +23,7 @@ To install & run this application on your device you have to perform the followi
     - main.py
 
     2) Then you have to install Wamp server and have to add usersafechecktest.sql to your MYSQL.
-    - userdafechecktest.sql file is available under JAVA->COM->EXAMPLE->URSAFECHECK folder.
+    - usersafechecktest.sql file is available under JAVA->COM->EXAMPLE->URSAFECHECK folder.
 
 3) After performing all the above steps you have to install the application on your mobile device.
 
