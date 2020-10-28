@@ -14,6 +14,7 @@
     <string name="incident_reporting_form">Incident Reporting Form</string>
     <string name="miscellaneous">Miscellaneous</string>
     <string name="title_activity_incident_reporting2">IncidentReportingActivity2</string>
+
     <string name="action_settings">Settings</string>
 
     <!-- string hint entries for incident reporting form -->
