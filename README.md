@@ -28,7 +28,7 @@ To install & run this application on your device you have to perform the followi
 3) After performing all the above steps you have to install the application on your mobile device.
 
 
-NOTE: Certain Authentication features are unabled as the application is still under development. To install please download "app-debug.apk" and enable unknown apps installation in the device.
+NOTE: Certain Authentication features are disabled as the application is still under development. To install please download "app-debug.apk" and enable unknown apps installation in the device.
 
 
 
