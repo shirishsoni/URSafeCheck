@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".FirstLoginActivity"></activity>
+        <activity android:name=".HazardActivity"></activity>
+        <activity android:name=".FirstLoginActivity" />
         <activity android:name=".ResetPassword" />
         <activity android:name=".EmergencyContacts" />
         <activity android:name=".OthersActivity" />

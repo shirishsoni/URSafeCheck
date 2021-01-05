@@ -37,9 +37,15 @@ class APIs {
         @POST("/api/ResetPwd")
         fun resetPwd(@Body body: JsonObject): Call<ResponseBody>
 
+        //For submitting ir form
         @Headers("Content-type: application/json")
         @POST("/api/irForm")
         fun ifFormSubmit(@Body body: JsonObject): Call<ResponseBody>
+
+        //For sending personal info of risk assessment
+        @Headers("Content-type: application/json")
+        @POST("/api/raForm1")
+        fun raForm1Submit(@Body body: JsonObject): Call<ResponseBody>
     }
 
     // Retrofit generates the final request URL by embedding the IP

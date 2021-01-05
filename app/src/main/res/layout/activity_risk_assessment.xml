@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg">
@@ -58,7 +59,8 @@
                     android:textAlignment="center"
                     android:textColor="#000"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    tools:ignore="DuplicateIds" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
@@ -69,7 +71,7 @@
                     app:boxStrokeColor="#000">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/ir_fname"
+                        android:id="@+id/ra_fname"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Employee Name" />
@@ -84,7 +86,7 @@
                     app:boxStrokeColor="#000">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/ir_address"
+                        android:id="@+id/ra_sup_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Supervisor Name"
@@ -99,7 +101,7 @@
                     app:boxStrokeColor="#000">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/ir_address"
+                        android:id="@+id/ra_job_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Job Title"
@@ -114,7 +116,7 @@
                     app:boxStrokeColor="#000">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/ir_address"
+                        android:id="@+id/ra_dept"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Department"
@@ -129,7 +131,7 @@
                     app:boxStrokeColor="#000">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/ir_address"
+                        android:id="@+id/ra_mob_no"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Mobile No."
@@ -144,7 +146,7 @@
                     app:boxStrokeColor="#000">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/ir_address"
+                        android:id="@+id/ra_email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="User Email"
@@ -159,7 +161,7 @@
                     app:boxStrokeColor="#000">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/ir_address"
+                        android:id="@+id/ra_sup_email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Supervisor Email"
@@ -174,7 +176,7 @@
                     app:boxStrokeColor="#000">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/ir_address"
+                        android:id="@+id/ra_sup_no"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Supervisor Contact"
@@ -189,11 +191,11 @@
                     app:boxStrokeColor="#000">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/ir_address"
+                        android:id="@+id/ra_emergency_no"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Emergency No.: 911"
-                        android:inputType="text"></com.google.android.material.textfield.TextInputEditText>
+                        android:text="Emergency No.: 911"
+                        android:inputType="none"></com.google.android.material.textfield.TextInputEditText>
                 </com.google.android.material.textfield.TextInputLayout>
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
@@ -204,10 +206,10 @@
                     app:boxStrokeColor="#000">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/ir_address"
+                        android:id="@+id/ra_sfty_adv_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="text"
+                        android:inputType="none"
                         android:text="Science Safety Advisor: Vincent Ignatiuk"></com.google.android.material.textfield.TextInputEditText>
                 </com.google.android.material.textfield.TextInputLayout>
                 <com.google.android.material.textfield.TextInputLayout
@@ -219,10 +221,10 @@
                     app:boxStrokeColor="#000">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/ir_address"
+                        android:id="@+id/ra_location"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="text"
+                        android:inputType="none"
                         android:text="Location: University of Regina"></com.google.android.material.textfield.TextInputEditText>
                 </com.google.android.material.textfield.TextInputLayout>
                 <RelativeLayout
@@ -233,7 +235,7 @@
                     android:backgroundTint="@color/colorPrimaryDark">
 
                     <RelativeLayout
-                        android:id="@+id/incident_date_layout"
+                        android:id="@+id/risk_date_layout"
                         android:layout_width="180dp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
@@ -241,7 +243,7 @@
                         android:orientation="horizontal">
                         <!-- button for Date-->
                         <com.google.android.material.button.MaterialButton
-                            android:id="@+id/ir_btn_date"
+                            android:id="@+id/ra_btn_date"
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                             android:layout_width="match_parent"
                             android:layout_height="60dp"
@@ -257,18 +259,18 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="2dp"
-                        android:layout_toEndOf="@+id/incident_date_layout"
+                        android:layout_toEndOf="@+id/risk_date_layout"
                         app:boxBackgroundColor="#fff"
                         app:boxStrokeColor="#000">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/ir_date_field"
+                            android:id="@+id/ra_date_field"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="date"></com.google.android.material.textfield.TextInputEditText>
                     </com.google.android.material.textfield.TextInputLayout>
                 </RelativeLayout>
-                //time picker for Occurrence or incident time
+                //time picker for risk assessment form
 
                 <RelativeLayout
 
@@ -278,7 +280,7 @@
                     android:backgroundTint="@color/colorPrimaryDark">
 
                     <RelativeLayout
-                        android:id="@+id/incident_time_layout"
+                        android:id="@+id/risk_time_layout"
                         android:layout_width="180dp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
@@ -287,7 +289,7 @@
 
                         <!-- button for Time-->
                         <com.google.android.material.button.MaterialButton
-                            android:id="@+id/ir_btn_time"
+                            android:id="@+id/ra_btn_time"
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                             android:layout_width="match_parent"
                             android:layout_height="60dp"
@@ -303,18 +305,18 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="2dp"
-                        android:layout_toEndOf="@+id/incident_time_layout"
+                        android:layout_toEndOf="@+id/risk_time_layout"
                         app:boxBackgroundColor="#fff"
                         app:boxStrokeColor="#000">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/ir_time_field"
+                            android:id="@+id/ra_time_field"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="time"></com.google.android.material.textfield.TextInputEditText>
                     </com.google.android.material.textfield.TextInputLayout>
                 </RelativeLayout>
-                // text area for incident details
+                // text area for risk details
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
@@ -325,7 +327,7 @@
                     app:boxStrokeColor="#000">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/ir_incident_occured"
+                        android:id="@+id/ra_risk_task"
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
                         android:hint="Task"
@@ -335,7 +337,7 @@
                         android:scrollbars="vertical"
                         android:textColorHint="@color/colorPrimaryDark"></com.google.android.material.textfield.TextInputEditText>
                 </com.google.android.material.textfield.TextInputLayout>
-                // text area for incident details
+                // text area for risk details
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
@@ -346,7 +348,7 @@
                     app:boxStrokeColor="#000">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/ir_incident_occured"
+                        android:id="@+id/ra_comments"
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
                         android:hint="Additional Comments"
@@ -358,25 +360,26 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <RadioGroup
-                    android:id="@+id/radioGroup"
-                    android:checkedButton="@+id/radio_button_1"
+                    android:id="@+id/ra_rb1"
+                    android:checkedButton="@+id/ra_rb1_yes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:id="@+id/title"
+                        android:id="@+id/ra_rb1_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Are you working alone?"
 
                         android:textSize="18sp"/>
                     <RadioButton
-                        android:id="@+id/radio_button_1"
+                        android:id="@+id/ra_rb1_yes"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="Yes"
+                        android:onClick="working_alone"
                         />
                     <RadioButton
-                        android:id="@+id/radio_button_2"
+                        android:id="@+id/ra_rb1_no"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:checked="true"
@@ -387,26 +390,26 @@
 
 
                 <RadioGroup
-                    android:id="@+id/radioGroup"
-                    android:checkedButton="@+id/radio_button_1"
+                    android:id="@+id/ra_rb2"
+                    android:checkedButton="@+id/ra_rb2_yes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:id="@+id/title"
+                        android:id="@+id/ra_rb2_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Is the work area clear of all hazards?"
 
                         android:textSize="18sp"/>
                     <RadioButton
-                        android:id="@+id/radio_button_1"
+                        android:id="@+id/ra_rb2_yes"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:checked="true"
                         android:text="Yes"
                         />
                     <RadioButton
-                        android:id="@+id/radio_button_2"
+                        android:id="@+id/ra_rb_no"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="No"
@@ -414,249 +417,264 @@
                 </RadioGroup>
 
                 <RadioGroup
-                    android:id="@+id/radioGroup"
-                    android:checkedButton="@+id/radio_button_1"
+                    android:id="@+id/ra_rb3"
+                    android:checkedButton="@+id/ra_rb3_yes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:id="@+id/title"
+                        android:id="@+id/ra_rb3_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Am I authorized to perform the job?"
 
                         android:textSize="18sp"/>
                     <RadioButton
-                        android:id="@+id/radio_button_1"
+                        android:id="@+id/ra_rb3_yes"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:checked="true"
                         android:text="Yes"
                         />
                     <RadioButton
-                        android:id="@+id/radio_button_2"
+                        android:id="@+id/ra_rb3_no"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:onClick="authorised"
                         android:text="No"
                         />
                 </RadioGroup>
 
                 <RadioGroup
-                    android:id="@+id/radioGroup"
-                    android:checkedButton="@+id/radio_button_1"
+                    android:id="@+id/ra_rb4"
+                    android:checkedButton="@+id/ra_rb4_yes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:id="@+id/title"
+                        android:id="@+id/ra_rb4_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Do I have the correct tools or equipment for the job?"
 
                         android:textSize="18sp"/>
                     <RadioButton
-                        android:id="@+id/radio_button_1"
+                        android:id="@+id/ra_rb4_yes"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:checked="true"
                         android:text="Yes"
                         />
                     <RadioButton
-                        android:id="@+id/radio_button_2"
+                        android:id="@+id/ra_rb4_no"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="No"
+                        android:onClick="equipment"
                         />
                 </RadioGroup>
 
                 <RadioGroup
-                    android:id="@+id/radioGroup"
-                    android:checkedButton="@+id/radio_button_1"
+                    android:id="@+id/ra_rb5"
+                    android:checkedButton="@+id/ra_rb5_yes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:id="@+id/title"
+                        android:id="@+id/ra_rb5_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Am I physically able to do the Task?"
 
                         android:textSize="18sp"/>
                     <RadioButton
-                        android:id="@+id/radio_button_1"
+                        android:id="@+id/ra_rb5_yes"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:checked="true"
                         android:text="Yes"
                         />
                     <RadioButton
-                        android:id="@+id/radio_button_2"
+                        android:id="@+id/ra_rb5_no"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="No"
+                        android:onClick="notAble"
                         />
                 </RadioGroup>
 
                 <RadioGroup
-                    android:id="@+id/radioGroup"
-                    android:checkedButton="@+id/radio_button_1"
+                    android:id="@+id/ra_rb6"
+                    android:checkedButton="@+id/ra_rb6_yes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:id="@+id/title"
+                        android:id="@+id/ra_rb6_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Do I have the correct PPE for the Task?"
 
                         android:textSize="18sp"/>
                     <RadioButton
-                        android:id="@+id/radio_button_1"
+                        android:id="@+id/ra_rb6_yes"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:checked="true"
                         android:text="Yes"
                         />
                     <RadioButton
-                        android:id="@+id/radio_button_2"
+                        android:id="@+id/ra_rb6_no"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="No"
+                        android:onClick="ppe"
                         />
                 </RadioGroup>
 
                 <RadioGroup
-                    android:id="@+id/radioGroup"
-                    android:checkedButton="@+id/radio_button_1"
+                    android:id="@+id/ra_rb7"
+                    android:checkedButton="@+id/ra_rb7_yes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:id="@+id/title"
+                        android:id="@+id/ra_rb7_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Are the Conditions ideal to do the task?"
 
                         android:textSize="18sp"/>
                     <RadioButton
-                        android:id="@+id/radio_button_1"
+                        android:id="@+id/ra_rb7_yes"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:checked="true"
                         android:text="Yes"
                         />
                     <RadioButton
-                        android:id="@+id/radio_button_2"
+                        android:id="@+id/ra_rb7_no"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="No"
+                        android:onClick="conditions"
                         />
                 </RadioGroup>
 
                 <RadioGroup
-                    android:id="@+id/radioGroup"
-                    android:checkedButton="@+id/radio_button_1"
+                    android:id="@+id/ra_rb8"
+                    android:checkedButton="@+id/ra_rb8_yes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:id="@+id/title"
+                        android:id="@+id/ra_rb8_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Do I feel comfortable about the task at hand?"
 
                         android:textSize="18sp"/>
                     <RadioButton
-                        android:id="@+id/radio_button_1"
+                        android:id="@+id/ra_rb8_yes"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:checked="true"
                         android:text="Yes"
                         />
                     <RadioButton
-                        android:id="@+id/radio_button_2"
+                        android:id="@+id/ra_rb8_no"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="No"
+                        android:onClick="comfortable"
                         />
                 </RadioGroup>
 
                 <RadioGroup
-                    android:id="@+id/radioGroup"
-                    android:checkedButton="@+id/radio_button_1"
+                    android:id="@+id/ra_rb9"
+                    android:checkedButton="@+id/ra_rb9_yes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:id="@+id/title"
+                        android:id="@+id/ra_rb9_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Have I discussed the task with others in the work area?"
 
                         android:textSize="18sp"/>
                     <RadioButton
-                        android:id="@+id/radio_button_1"
+                        android:id="@+id/ra_rb9_yes"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:checked="true"
                         android:text="Yes"
                         />
                     <RadioButton
-                        android:id="@+id/radio_button_2"
+                        android:id="@+id/ra_rb9_no"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="No"
+                        android:onClick="others"
                         />
                 </RadioGroup>
 
                 <RadioGroup
-                    android:id="@+id/radioGroup"
-                    android:checkedButton="@+id/radio_button_1"
+                    android:id="@+id/ra_rb10"
+                    android:checkedButton="@+id/ra_rb10_yes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:id="@+id/title"
+                        android:id="@+id/ra_rb10_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Is my supervisor aware of what Task I am about to do?"
 
                         android:textSize="18sp"/>
                     <RadioButton
-                        android:id="@+id/radio_button_1"
+                        android:id="@+id/ra_rb10_yes"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:checked="true"
                         android:text="Yes"
                         />
                     <RadioButton
-                        android:id="@+id/radio_button_2"
+                        android:id="@+id/ra_rb10_no"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="No"
+                        android:onClick="supervisor"
                         />
                 </RadioGroup>
 
                 <RadioGroup
-                    android:id="@+id/radioGroup"
-                    android:checkedButton="@+id/radio_button_1"
+                    android:id="@+id/ra_rb11"
+                    android:checkedButton="@+id/ra_rb11_yes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:id="@+id/title"
+                        android:id="@+id/ra_rb11_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Are Driving conditions safe?"
 
                         android:textSize="18sp"/>
                     <RadioButton
-                        android:id="@+id/radio_button_1"
+                        android:id="@+id/ra_rb11_yes"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:checked="true"
                         android:text="Yes"
                         />
                     <RadioButton
-                        android:id="@+id/radio_button_2"
+                        android:id="@+id/ra_rb11_no"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="No"
+                        android:onClick="driving"
+                        />
+                    <RadioButton
+                        android:id="@+id/ra_rb11_NA"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="N/A"
                         />
                 </RadioGroup>
                 <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/ra_personal_info"
+                    android:id="@+id/ra_possible_hazards"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="3dp"
@@ -667,25 +685,26 @@
                     android:textStyle="bold" />
 
                 <RadioGroup
-                    android:id="@+id/radioGroup"
-                    android:checkedButton="@+id/radio_button_1"
+                    android:id="@+id/ra_rb12"
+                    android:checkedButton="@+id/ra_rb12_no"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:id="@+id/title"
+                        android:id="@+id/ra_rb12_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Weather extremes"
 
                         android:textSize="18sp"/>
                     <RadioButton
-                        android:id="@+id/radio_button_1"
+                        android:id="@+id/ra_rb12_yes"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="Yes"
+                        android:onClick="PossibleHazards"
                         />
                     <RadioButton
-                        android:id="@+id/radio_button_2"
+                        android:id="@+id/ra_rb12_no"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:checked="true"
@@ -694,25 +713,26 @@
                 </RadioGroup>
 
                 <RadioGroup
-                    android:id="@+id/radioGroup"
-                    android:checkedButton="@+id/radio_button_1"
+                    android:id="@+id/ra_rb13"
+                    android:checkedButton="@+id/ra_rb13_no"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:id="@+id/title"
+                        android:id="@+id/ra_rb13_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Biological"
 
                         android:textSize="18sp"/>
                     <RadioButton
-                        android:id="@+id/radio_button_1"
+                        android:id="@+id/ra_rb13_yes"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="Yes"
+                        android:onClick="PossibleHazards"
                         />
                     <RadioButton
-                        android:id="@+id/radio_button_2"
+                        android:id="@+id/ra_rb13_no"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:checked="true"
@@ -721,25 +741,26 @@
                 </RadioGroup>
 
                 <RadioGroup
-                    android:id="@+id/radioGroup"
-                    android:checkedButton="@+id/radio_button_1"
+                    android:id="@+id/ra_rb14"
+                    android:checkedButton="@+id/ra_rb14_no"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:id="@+id/title"
+                        android:id="@+id/ra_rb14_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Chemical"
 
                         android:textSize="18sp"/>
                     <RadioButton
-                        android:id="@+id/radio_button_1"
+                        android:id="@+id/ra_rb14_yes"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="Yes"
+                        android:onClick="PossibleHazards"
                         />
                     <RadioButton
-                        android:id="@+id/radio_button_2"
+                        android:id="@+id/ra_rb14_no"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:checked="true"
@@ -748,25 +769,26 @@
                 </RadioGroup>
 
                 <RadioGroup
-                    android:id="@+id/radioGroup"
-                    android:checkedButton="@+id/radio_button_1"
+                    android:id="@+id/ra_rb15"
+                    android:checkedButton="@+id/ra_rb15_no"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:id="@+id/title"
+                        android:id="@+id/ra_rb15_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Electrical"
 
                         android:textSize="18sp"/>
                     <RadioButton
-                        android:id="@+id/radio_button_1"
+                        android:id="@+id/ra_rb15_yes"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="Yes"
+                        android:onClick="PossibleHazards"
                         />
                     <RadioButton
-                        android:id="@+id/radio_button_2"
+                        android:id="@+id/ra_rb15_no"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:checked="true"
@@ -775,25 +797,26 @@
                 </RadioGroup>
 
                 <RadioGroup
-                    android:id="@+id/radioGroup"
-                    android:checkedButton="@+id/radio_button_1"
+                    android:id="@+id/ra_rb16"
+                    android:checkedButton="@+id/ra_rb16_no"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:id="@+id/title"
+                        android:id="@+id/ra_rb16_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Fire"
 
                         android:textSize="18sp"/>
                     <RadioButton
-                        android:id="@+id/radio_button_1"
+                        android:id="@+id/ra_rb16_yes"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="Yes"
+                        android:onClick="PossibleHazards"
                         />
                     <RadioButton
-                        android:id="@+id/radio_button_2"
+                        android:id="@+id/ra_rb16_no"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:checked="true"
@@ -802,25 +825,26 @@
                 </RadioGroup>
 
                 <RadioGroup
-                    android:id="@+id/radioGroup"
-                    android:checkedButton="@+id/radio_button_1"
+                    android:id="@+id/ra_rb17"
+                    android:checkedButton="@+id/ra_rb17_no"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:id="@+id/title"
+                        android:id="@+id/ra_rb17_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Falls"
 
                         android:textSize="18sp"/>
                     <RadioButton
-                        android:id="@+id/radio_button_1"
+                        android:id="@+id/ra_rb17_yes"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="Yes"
+                        android:onClick="PossibleHazards"
                         />
                     <RadioButton
-                        android:id="@+id/radio_button_2"
+                        android:id="@+id/ra_rb17_no"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:checked="true"
@@ -829,25 +853,26 @@
                 </RadioGroup>
 
                 <RadioGroup
-                    android:id="@+id/radioGroup"
-                    android:checkedButton="@+id/radio_button_1"
+                    android:id="@+id/ra_rb18"
+                    android:checkedButton="@+id/ra_rb18_no"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:id="@+id/title"
+                        android:id="@+id/ra_rb18_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Lifting/Pushing"
 
                         android:textSize="18sp"/>
                     <RadioButton
-                        android:id="@+id/radio_button_1"
+                        android:id="@+id/ra_rb18_yes"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="Yes"
+                        android:onClick="PossibleHazards"
                         />
                     <RadioButton
-                        android:id="@+id/radio_button_2"
+                        android:id="@+id/ra_rb18_no"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:checked="true"
@@ -856,25 +881,26 @@
                 </RadioGroup>
 
                 <RadioGroup
-                    android:id="@+id/radioGroup"
-                    android:checkedButton="@+id/radio_button_1"
+                    android:id="@+id/ra_rb19"
+                    android:checkedButton="@+id/ra_rb19_no"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:id="@+id/title"
+                        android:id="@+id/ra_rb19_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Compressed Gases/Vacuums"
 
                         android:textSize="18sp"/>
                     <RadioButton
-                        android:id="@+id/radio_button_1"
+                        android:id="@+id/ra_rb19_yes"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="Yes"
+                        android:onClick="PossibleHazards"
                         />
                     <RadioButton
-                        android:id="@+id/radio_button_2"
+                        android:id="@+id/ra_rb19_no"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:checked="true"
@@ -883,25 +909,26 @@
                 </RadioGroup>
 
                 <RadioGroup
-                    android:id="@+id/radioGroup"
-                    android:checkedButton="@+id/radio_button_1"
+                    android:id="@+id/ra_rb20"
+                    android:checkedButton="@+id/ra_rb20_no"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:id="@+id/title"
+                        android:id="@+id/ra_rb20_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Heat"
 
                         android:textSize="18sp"/>
                     <RadioButton
-                        android:id="@+id/radio_button_1"
+                        android:id="@+id/ra_rb20_yes"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="Yes"
+                        android:onClick="PossibleHazards"
                         />
                     <RadioButton
-                        android:id="@+id/radio_button_2"
+                        android:id="@+id/ra_rb20_no"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:checked="true"

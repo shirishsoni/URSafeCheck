@@ -44,7 +44,7 @@ class IncidentReportingActivity : AppCompatActivity(), View.OnClickListener {
         val empSpinner: Spinner = findViewById(R.id.ir_employment_category_spinner)
         if (empSpinner != null) {
 
-            // Adapter to fetch mand manage spinner operations
+            // Adapter to fetch and manage spinner operations
             val arrayAdapter =
                 ArrayAdapter(this, android.R.layout.simple_spinner_item, emplyoee_types)
             empSpinner.adapter = arrayAdapter

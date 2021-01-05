@@ -285,6 +285,11 @@ def irForm():
     cursor.close()
     conn.close()
 
+#Code for submitting Incident Reporting form
+@app.route('/api/irForm', methods=['POST'])
+def raForm1():
+    print("Risk assessment for submitted") 
+
 # running web app in local machine
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
