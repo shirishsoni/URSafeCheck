@@ -31,13 +31,13 @@ class HazardActivity : AppCompatActivity() {
             val details = ra_details.text.toString().trim()
             val controls = ra_controls.text.toString().trim()
             val total = ra_probability.text.toString().toInt() + ra_frequency.text.toString().toInt() + ra_severity.text.toString().toInt()
-            emptyStringArray += hazard
-            emptyStringArray += prob
-            emptyStringArray += freq
-            emptyStringArray += severity
-            emptyStringArray += total.toString()
-            emptyStringArray += details
-            emptyStringArray += controls
+            emptyStringArray += "Hazard: $hazard"
+            emptyStringArray += "Probability: $prob"
+            emptyStringArray += "Frequency: $freq"
+            emptyStringArray += "Severity: $severity"
+            emptyStringArray += "Total: ${total.toString()}"
+            emptyStringArray += "Details: $details"
+            emptyStringArray += "Controls: $controls"
 
             println(emptyStringArray.contentToString())
 
@@ -58,13 +58,13 @@ class HazardActivity : AppCompatActivity() {
             val details = ra_details.text.toString().trim()
             val controls = ra_controls.text.toString().trim()
             val total = ra_probability.text.toString().toInt() + ra_frequency.text.toString().toInt() + ra_severity.text.toString().toInt()
-            emptyStringArray += hazard
-            emptyStringArray += prob
-            emptyStringArray += freq
-            emptyStringArray += severity
-            emptyStringArray += total.toString()
-            emptyStringArray += details
-            emptyStringArray += controls
+            emptyStringArray += "Hazard: $hazard"
+            emptyStringArray += "Probability: $prob"
+            emptyStringArray += "Frequency: $freq"
+            emptyStringArray += "Severity: $severity"
+            emptyStringArray += "Total: ${total.toString()}"
+            emptyStringArray += "Details: $details"
+            emptyStringArray += "Controls: $controls"
 
             println(emptyStringArray.contentToString())
 
@@ -78,7 +78,7 @@ class HazardActivity : AppCompatActivity() {
             val jsonObj = JsonObject()
             val hazardDetails = emptyStringArray.contentToString()
             Toast.makeText(applicationContext, hazardDetails, Toast.LENGTH_LONG).show()
-            jsonObj.addProperty("DetailedReport",hazardDetails)
+            jsonObj.addProperty("hazards",hazardDetails)
 
             APIs
                 .service
