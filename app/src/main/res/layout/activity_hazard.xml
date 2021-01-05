@@ -78,7 +78,7 @@
                         android:id="@+id/ra_probability"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Probability"
+                        android:hint="Probability(1-5)"
                         android:inputType="number"/>
                 </com.google.android.material.textfield.TextInputLayout>
                 <com.google.android.material.textfield.TextInputLayout
@@ -94,7 +94,7 @@
                         android:id="@+id/ra_frequency"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Frequency"
+                        android:hint="Frequency(1-5)"
                         android:inputType="number"/>
                 </com.google.android.material.textfield.TextInputLayout>
                 <com.google.android.material.textfield.TextInputLayout
@@ -110,7 +110,7 @@
                         android:id="@+id/ra_severity"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Severity"
+                        android:hint="Severity(1-5)"
                         android:inputType="number"/>
                 </com.google.android.material.textfield.TextInputLayout>
                 <com.google.android.material.textfield.TextInputLayout

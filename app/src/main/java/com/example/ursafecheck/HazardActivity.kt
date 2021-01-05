@@ -12,6 +12,7 @@ import org.json.JSONArray
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.sql.Types.NULL
 import java.util.*
 
 class HazardActivity : AppCompatActivity() {
@@ -30,7 +31,20 @@ class HazardActivity : AppCompatActivity() {
             val severity = ra_severity.text.toString().trim()
             val details = ra_details.text.toString().trim()
             val controls = ra_controls.text.toString().trim()
-            val total = ra_probability.text.toString().toInt() + ra_frequency.text.toString().toInt() + ra_severity.text.toString().toInt()
+            var total = 0;
+            if(!freq.isEmpty())
+            {
+                total += freq.toInt()
+            }
+            if(!severity.isEmpty())
+            {
+                total += severity.toInt()
+            }
+            if(!prob.isEmpty())
+            {
+                total += prob.toInt()
+            }
+           // val total = ra_probability.text.toString().toInt() + ra_frequency.text.toString().toInt() + ra_severity.text.toString().toInt()
             emptyStringArray += "Hazard: $hazard"
             emptyStringArray += "Probability: $prob"
             emptyStringArray += "Frequency: $freq"
@@ -57,10 +71,23 @@ class HazardActivity : AppCompatActivity() {
             val severity = ra_severity.text.toString().trim()
             val details = ra_details.text.toString().trim()
             val controls = ra_controls.text.toString().trim()
-            val total = ra_probability.text.toString().toInt() + ra_frequency.text.toString().toInt() + ra_severity.text.toString().toInt()
+            var total = 0;
+            if(!freq.isEmpty())
+            {
+                total += freq.toInt()
+            }
+            if(!severity.isEmpty())
+            {
+                total += severity.toInt()
+            }
+            if(!prob.isEmpty())
+            {
+                total += prob.toInt()
+            }
+           // val total = ra_probability.text.toString().toInt() + ra_frequency.text.toString().toInt() + ra_severity.text.toString().toInt()
             emptyStringArray += "Hazard: $hazard"
             emptyStringArray += "Probability: $prob"
-            emptyStringArray += "Frequency: $freq"
+            emptyStringArray += "Frequency:$freq"
             emptyStringArray += "Severity: $severity"
             emptyStringArray += "Total: ${total.toString()}"
             emptyStringArray += "Details: $details"
@@ -77,7 +104,7 @@ class HazardActivity : AppCompatActivity() {
 
             val jsonObj = JsonObject()
             val hazardDetails = emptyStringArray.contentToString()
-            Toast.makeText(applicationContext, hazardDetails, Toast.LENGTH_LONG).show()
+            //Toast.makeText(applicationContext, hazardDetails, Toast.LENGTH_LONG).show()
             jsonObj.addProperty("hazards",hazardDetails)
 
             APIs
@@ -99,6 +126,8 @@ class HazardActivity : AppCompatActivity() {
                         }
                     }
                 })
+
+            emptyStringArray = emptyArray()
             val intent = Intent(this, HomapageActivity::class.java)
             startActivity(intent)
         }

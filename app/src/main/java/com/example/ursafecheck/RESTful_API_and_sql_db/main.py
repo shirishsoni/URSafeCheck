@@ -13,7 +13,7 @@ from random import randint
 #For email
 import smtplib, ssl
 
-ra_msg = "Risk Assessment Form details: "
+ra_msg = " "
 
 app = Flask(__name__)
 
@@ -308,75 +308,78 @@ def raForm1():
     date = json['date']
     time = json['time']
     task = json['task']
-    rb1_ques = json['rb1_ques']
+    #rb1_ques = json['rb1_ques']
     rb1_value = json['rb1_value']
-    rb2_ques = json['rb2_ques']
+    #rb2_ques = json['rb2_ques']
     rb2_value = json['rb2_value']
-    rb3_ques = json['rb3_ques']
+    #rb3_ques = json['rb3_ques']
     rb3_value = json['rb3_value']
-    rb4_ques = json['rb4_ques']
+    #rb4_ques = json['rb4_ques']
     rb4_value = json['rb4_value']
-    rb5_ques = json['rb5_ques']
+    #rb5_ques = json['rb5_ques']
     rb5_value = json['rb5_value']
-    rb6_ques = json['rb6_ques']
+    #rb6_ques = json['rb6_ques']
     rb6_value = json['rb6_value']
-    rb7_ques = json['rb7_ques']
+    #rb7_ques = json['rb7_ques']
     rb7_value = json['rb7_value']
-    rb8_ques = json['rb8_ques']
+    #rb8_ques = json['rb8_ques']
     rb8_value = json['rb8_value']
-    rb9_ques = json['rb9_ques']
+    #rb9_ques = json['rb9_ques']
     rb9_value = json['rb9_value']
-    rb10_ques = json['rb10_ques']
+    #rb10_ques = json['rb10_ques']
     rb10_value = json['rb10_value']
-    rb11_ques = json['rb11_ques']
+    #rb11_ques = json['rb11_ques']
     rb11_value = json['rb11_value']
-    rb12_ques = json['rb12_ques']
+    #rb12_ques = json['rb12_ques']
     rb12_value = json['rb12_value']
-    rb13_ques = json['rb13_ques']
+    #rb13_ques = json['rb13_ques']
     rb13_value = json['rb13_value']
-    rb14_ques = json['rb14_ques']
+    #rb14_ques = json['rb14_ques']
     rb14_value = json['rb14_value']
-    rb15_ques = json['rb15_ques']
+    #rb15_ques = json['rb15_ques']
     rb15_value = json['rb15_value']
-    rb16_ques = json['rb16_ques']
+    #rb16_ques = json['rb16_ques']
     rb16_value = json['rb16_value']
-    rb17_ques = json['rb17_ques']
+    #rb17_ques = json['rb17_ques']
     rb17_value = json['rb17_value']
-    rb18_ques = json['rb18_ques']
+    #rb18_ques = json['rb18_ques']
     rb18_value = json['rb18_value']
-    rb19_ques = json['rb19_ques']
+    #rb19_ques = json['rb19_ques']
     rb19_value = json['rb19_value']
-    rb20_ques = json['rb120_ques']
+    #rb20_ques = json['rb20_ques']
     rb20_value = json['rb20_value']
-
     
+
+    global ra_msg
+
     ra_msg = "Subject: Risk Assessment Report Submitted \n\nEmployee Name: "+str(Ename)+\
               "\n\nSupervisor Name: "+str(sup_name)+"\n\nJob Title: "+str(job_title)+"\n\nDepartment: "+str(dept)+\
               "\n\nUser mobile number: "+str(mob_no)+"\n\nUser Email: "+str(email)+\
-              "\n\nSupervisor Email: "+str(sup_email)+"\n\Emergency number: "+str(emo_no)+\
-              "\n\nAdvisor Name: "+str(adv_name)+\
-              "\n\Location: "+str(location)+"\n\nDate: "+str(date)+\
+              "\n\nSupervisor Email: "+str(sup_email)+"\n\n"+str(emo_no)+\
+              "\n\n"+str(adv_name)+\
+              "\n\n"+str(location)+"\n\nDate: "+str(date)+\
               "\n\nTime: "+str(time)+"\n\nTask: "+str(task)+\
-              "\n\n" + str(rb1_ques)+"\n\n: "+str(rb1_value)+\
-              "\n\n" + str(rb2_ques)+"\n\n: "+str(rb2_value)+\
-              "\n\n" + str(rb3_ques)+"\n\n: "+str(rb3_value)+\
-              "\n\n" + str(rb4_ques)+"\n\n: "+str(rb4_value)+\
-              "\n\n" + str(rb5_ques)+"\n\n: "+str(rb5_value)+\
-              "\n\n" + str(rb6_ques)+"\n\n: "+str(rb6_value)+\
-              "\n\n" + str(rb7_ques)+"\n\n: "+str(rb7_value)+\
-              "\n\n" + str(rb8_ques)+"\n\n: "+str(rb8_value)+\
-              "\n\n" + str(rb9_ques)+"\n\n: "+str(rb9_value)+\
-              "\n\n" + str(rb10_ques)+"\n\n: "+str(rb10_value)+\
-              "\n\n" + str(rb11_ques)+"\n\n: "+str(rb11_value)+\
-              "\n\n" + str(rb12_ques)+"\n\n: "+str(rb12_value)+\
-              "\n\n" + str(rb13_ques)+"\n\n: "+str(rb13_value)+\
-              "\n\n" + str(rb14_ques)+"\n\n: "+str(rb14_value)+\
-              "\n\n" + str(rb15_ques)+"\n\n: "+str(rb15_value)+\
-              "\n\n" + str(rb16_ques)+"\n\n: "+str(rb16_value)+\
-              "\n\n" + str(rb17_ques)+"\n\n: "+str(rb17_value)+\
-              "\n\n" + str(rb18_ques)+"\n\n: "+str(rb18_value)+\
-              "\n\n" + str(rb19_ques)+"\n\n: "+str(rb19_value)+\
-              "\n\n" + str(rb20_ques)+"\n\n: "+str(rb20_value)
+              "\n\n 1) Are you working alone?" + "\n\n: "+str(rb1_value)+\
+              "\n\n 2) Is the work area clear of all hazards?" +"\n\n: "+str(rb2_value)+\
+              "\n\n 3) Am I authorized to perform the job?" + "\n\n: "+str(rb3_value)+\
+              "\n\n 4) Do I have the correct tools or equipment for the job?" +"\n\n: "+str(rb4_value)+\
+              "\n\n 5) Am I physically able to do the task?" +"\n\n: "+str(rb5_value)+\
+              "\n\n 6) Do I have the correct PPE for the task?" +"\n\n: "+str(rb6_value)+\
+              "\n\n 7) Are the conditions ideal to do the task?" + "\n\n: "+str(rb7_value)+\
+              "\n\n 8) Do I feel comfortable about the task at hand?" +"\n\n: "+str(rb8_value)+\
+              "\n\n 9) Have I discussed the task with others in the work area?" + "\n\n: "+str(rb9_value)+\
+              "\n\n 10) Is my supervisor aware of what Task I am about to do?" +"\n\n: "+str(rb10_value)+\
+              "\n\n 11) Are Driving conditions safe?" +"\n\n: "+str(rb11_value)+\
+              "\n\n 12) Weather extremes:" + "\n\n: "+str(rb12_value)+\
+              "\n\n 13) Biological:" + "\n\n: "+str(rb13_value)+\
+              "\n\n 14) Chemical:" + "\n\n: "+str(rb14_value)+\
+              "\n\n 15) Electrical: " +"\n\n: "+str(rb15_value)+\
+              "\n\n 16) Fire: " +"\n\n: "+str(rb16_value)+\
+              "\n\n 17) Falls: " +"\n\n: "+str(rb17_value)+\
+              "\n\n 18) Lifting/Pushing: " +"\n\n: "+str(rb18_value)+\
+              "\n\n 19) Compressed Gases/Vacuums: " +"\n\n: "+str(rb19_value)+\
+              "\n\n 20) Heat: " +"\n\n: "+str(rb20_value)
+
               
 
     resp = jsonify({'response':'Page1 accepted'})
@@ -395,8 +398,18 @@ def raForm2():
     hazards = json['hazards']
     hazards = hazards.replace('[', '')
     hazards = hazards.replace(']', '')
-    hazards = hazards.replace('Hazard:', '\nHazard:')
+    hazards = hazards.replace('Hazard:', '\n\nHazard:')
 
+    port = 465  # For SSL
+    smtp_server = "smtp.gmail.com"
+
+    #As of now our personal email is used but in the actual deployment
+    #the email ID of the Safety advisor will be used
+    sender_email = "shirishsoni128@gmail.com"  # Sender's email id
+    password = "Shirish@123" #password for the email id
+    #The content of the email
+
+    global ra_msg
     ra_msg = ra_msg + str(hazards)
 
     #Sending the email
@@ -415,6 +428,7 @@ def raForm2():
 # running web app in local machine
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+   
 
 
 

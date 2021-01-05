@@ -57,7 +57,7 @@ class APIs {
     // address of the server and the request
     companion object {
         private val retrofit = Retrofit.Builder()
-            .baseUrl("http://142.3.71.38:5000")
+            .baseUrl("http://192.168.137.1:5000")
             .addConverterFactory(GsonConverterFactory.create(GsonBuilder().create()))
             .build()
 
