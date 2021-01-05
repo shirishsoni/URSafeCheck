@@ -35,5 +35,11 @@
     <string name="hint_medical_treatment">Was Medical Treatment Received?</string>
     <string name="hint_initials">Enter your Initials</string>
     <string name="hint_submit_date">Enter Date</string>
+    <string name="title_activity_hazards">HazardsActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
 
 </resources>
