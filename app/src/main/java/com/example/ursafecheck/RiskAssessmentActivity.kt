@@ -207,10 +207,14 @@ class RiskAssessmentActivity : AppCompatActivity(), View.OnClickListener {
             {
                 rb11_value ="Yes"
             }
-            else
+            else if (ra_rb11_no.isChecked)
             {
                 rb11_value ="No"
             }
+            else{
+                rb11_value = "N/A"
+            }
+
 
             if(ra_rb12_yes.isChecked)
             {

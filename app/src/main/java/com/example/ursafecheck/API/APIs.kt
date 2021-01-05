@@ -46,6 +46,11 @@ class APIs {
         @Headers("Content-type: application/json")
         @POST("/api/raForm1")
         fun raForm1Submit(@Body body: JsonObject): Call<ResponseBody>
+
+        //For sending personal info of risk assessment
+        @Headers("Content-type: application/json")
+        @POST("/api/raForm2")
+        fun raForm2Submit(@Body body: JsonObject): Call<ResponseBody>
     }
 
     // Retrofit generates the final request URL by embedding the IP
