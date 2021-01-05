@@ -370,9 +370,6 @@ class RiskAssessmentActivity : AppCompatActivity(), View.OnClickListener {
                         }
                     }
                 })
-
-            val intent = Intent(this, HazardActivity::class.java)
-            startActivity(intent)
         }
     }
 
