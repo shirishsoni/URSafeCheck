@@ -59,8 +59,8 @@ def add():
 
         #As of now our personal email is used but in the actual deployment
         #the email ID of the Safety advisor will be used
-        sender_email = "shirishsoni128@gmail.com"  # Sender's email id
-        password = "Shirish@123" #password for the email id
+        sender_email = "EMAIL GOES HERE"  # Sender's email id
+        password = "PASSWORD HERE" #password for the email id
         #The content of the email
         message = "Subject: OTP for URSafeCheck \n\nHere is your one time password:"+str(Pwd)
 
@@ -162,8 +162,8 @@ def forgot():
 
         # As of now our personal email is used but in the actual deployment
         # the email ID of the Safety advisor will be used
-        sender_email = "shirishsoni128@gmail.com"  # Sender's email id
-        password = "Shirish@123"  # password for the email id
+        sender_email = "EMAIL GOES HERE"  # Sender's email id
+        password = "PASSWORD GOES HERE"  # password for the email id
         # The content of the email
         message = "Subject: OTP for URSafeCheck \n\nHere is your one time password:" + str(Pwd)
 
@@ -263,8 +263,8 @@ def irForm():
 
     #As of now our personal email is used but in the actual deployment
     #the email ID of the Safety advisor will be used
-    sender_email = "shirishsoni128@gmail.com"  # Sender's email id
-    password = "Shirish@123" #password for the email id
+    sender_email = "EMAIL GOES HERE"  # Sender's email id
+    password = "PASSWORD GOES HERE" #password for the email id
     #The content of the email
     message = "Subject: Incident Report Submitted \n\nFull Name: "+str(Fname)+\
               "\n\nAddress: "+str(address)+"\n\nCity: "+str(city)+"\n\nPostal Code: "+str(postal)+\
@@ -405,8 +405,8 @@ def raForm2():
 
     #As of now our personal email is used but in the actual deployment
     #the email ID of the Safety advisor will be used
-    sender_email = "shirishsoni128@gmail.com"  # Sender's email id
-    password = "Shirish@123" #password for the email id
+    sender_email = "EMAIL GOES HERE"  # Sender's email id
+    password = "PASSWORD GOES HERE" #password for the email id
     #The content of the email
 
     global ra_msg
